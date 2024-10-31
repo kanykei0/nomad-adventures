@@ -1,0 +1,56 @@
+@use "styles/mixin" as *;
+
+.button {
+  font-family: inherit;
+  padding: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &.primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 20px;
+
+    &:hover {
+      background-color: var(--color-hover);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 20px;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &.rounded {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    @include flexbox;
+
+    &:hover {
+      background-color: var(--color-secondary);
+    }
+  }
+
+  /* === Button Sizes === */
+  &.long {
+    width: 200px;
+  }
+
+  &.medium {
+    width: 120px;
+  }
+
+  &.short {
+    width: 40px;
+  }
+}

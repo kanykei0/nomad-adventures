@@ -1,0 +1,39 @@
+@use "styles/mixin" as *;
+
+.block {
+  position: fixed;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  @include medium {
+    top: 0;
+  }
+
+  .innerBlock {
+    background-color: var(--color-white);
+    border-radius: 50px;
+    @include medium {
+      border-radius: 0px;
+    }
+
+    .wrapper {
+      @include flexbox(space-between, center);
+      height: 80px;
+      @include medium {
+        height: auto;
+      }
+
+      .logoBlock {
+        width: 80px;
+      }
+      .langBlock {
+        @include flexbox(start, center);
+      }
+    }
+
+    .navInvisible {
+      display: none;
+    }
+  }
+}

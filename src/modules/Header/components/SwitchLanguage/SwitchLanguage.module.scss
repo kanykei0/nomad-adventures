@@ -1,0 +1,9 @@
+.block {
+  padding: 7px 10px 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+  .select {
+    outline: none;
+    border: none;
+  }
+}

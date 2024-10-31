@@ -1,0 +1,94 @@
+@use "styles/mixin" as *;
+
+.typography {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 600;
+  @include medium {
+    font-size: 40px;
+  }
+  @include large {
+    font-size: 50px;
+  }
+}
+.h2 {
+  font-size: 22px;
+  font-weight: 600;
+  @include medium {
+    font-size: 24px;
+  }
+  @include large {
+    font-size: 28px;
+  }
+}
+.body,
+.button {
+  font-size: 14px;
+  @include medium {
+    font-size: 15px;
+  }
+  @include large {
+    font-size: 16px;
+  }
+}
+.smallBody {
+  font-size: 12px;
+  @include medium {
+    font-size: 13px;
+  }
+  @include large {
+    font-size: 14px;
+  }
+}
+.extraSmallBody {
+  font-size: 10px;
+  @include medium {
+    font-size: 11px;
+  }
+  @include large {
+    font-size: 12px;
+  }
+}
+
+.extraBold {
+  font-weight: 700;
+}
+.bold {
+  font-weight: 600;
+}
+.medium {
+  font-weight: 500;
+}
+.normal {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+
+.black {
+  color: var(--color-black);
+}
+.white {
+  color: var(--color-white);
+}
+.gray {
+  color: var(--color-gray);
+}
+.primary {
+  color: var(--color-primary);
+}
+
+.play {
+  font-family: var(--var-play);
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

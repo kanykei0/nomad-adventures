@@ -1,0 +1,19 @@
+@use "styles/mixin" as *;
+
+.nav {
+  .ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    .li {
+      border-top: 1px solid var(--color-dark);
+      padding: 10px 0 20px;
+      .text {
+        &:hover {
+          color: var(--color-dark);
+        }
+      }
+    }
+  }
+}
