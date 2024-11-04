@@ -10,7 +10,7 @@ const MainBanner = () => {
           <Typography
             color="primary"
             variant="h1"
-            font="play"
+            weight="bold"
             className={classes.title}
           >
             Nomad adventures

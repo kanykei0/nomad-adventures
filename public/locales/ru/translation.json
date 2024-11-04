@@ -6,5 +6,9 @@
     "jeepTours": "Джип-туры",
     "trekking": "Треккинг",
     "placesInKG": "Места в Кыргызстане"
+  },
+
+  "homePage": {
+    "hello": "Привет мир"
   }
 }

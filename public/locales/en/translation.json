@@ -6,5 +6,9 @@
     "jeepTours": "Jeep tours",
     "trekking": "Trekking",
     "placesInKG": "Places in Kyrgyzstan"
+  },
+
+  "homePage": {
+    "hello": "Hello World"
   }
 }

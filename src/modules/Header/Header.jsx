@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import DesktopNav from "./components/DesktopNav/DesktopNav";
 import Logo from "assets/images/logo.svg";
 import SwitchLanguage from "./components/SwitchLanguage/SwitchLanguage";
+import { Link } from "react-router-dom";
+import { PATHS } from "utils/Constants/Constants";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,9 +32,9 @@ const Header = () => {
         <div className={classes.innerBlock}>
           <Container>
             <div className={classes.wrapper}>
-              <div className={classes.logoBlock}>
+              <Link to={PATHS.home} className={classes.logoBlock}>
                 <img alt="logo" src={Logo} />
-              </div>
+              </Link>
               <div className={classes.langBlock}>
                 <SwitchLanguage />
                 <div>{isMobile && <Burger />}</div>
