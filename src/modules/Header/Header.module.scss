@@ -1,5 +1,12 @@
 @use "styles/mixin" as *;
 
+.topBlock {
+  padding-top: 80px;
+  @include medium {
+    padding-top: 99.5px;
+  }
+}
+
 .block {
   position: fixed;
   top: 0px;

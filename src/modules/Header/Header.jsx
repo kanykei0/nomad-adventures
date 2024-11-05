@@ -27,26 +27,28 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className={classes.block}>
-      <div className={classes.innerBlock}>
-        <Container>
-          <div className={classes.wrapper}>
-            <Link to={PATHS.home} className={classes.logoBlock}>
-              <img alt="nomad aventures logo" src={Logo} />
-            </Link>
-            <div className={classes.langBlock}>
-              <SwitchLanguage />
-              <div>{isMobile && <Burger />}</div>
+    <div className={classes.topBlock}>
+      <div className={classes.block}>
+        <div className={classes.innerBlock}>
+          <Container>
+            <div className={classes.wrapper}>
+              <Link to={PATHS.home} className={classes.logoBlock}>
+                <img alt="nomad aventures logo" src={Logo} />
+              </Link>
+              <div className={classes.langBlock}>
+                <SwitchLanguage />
+                <div>{isMobile && <Burger />}</div>
+              </div>
             </div>
-          </div>
-          <div
-            className={`${classes.navVisible} ${
-              isMobile && classes.navInvisible
-            }`}
-          >
-            <DesktopNav />
-          </div>
-        </Container>
+            <div
+              className={`${classes.navVisible} ${
+                isMobile && classes.navInvisible
+              }`}
+            >
+              <DesktopNav />
+            </div>
+          </Container>
+        </div>
       </div>
     </div>
   );
