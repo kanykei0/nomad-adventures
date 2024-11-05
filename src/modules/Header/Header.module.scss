@@ -2,7 +2,7 @@
 
 .block {
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -12,16 +12,12 @@
 
   .innerBlock {
     background-color: var(--color-white);
-    border-radius: 50px;
-    @include medium {
-      border-radius: 0px;
-    }
 
     .wrapper {
       @include flexbox(space-between, center);
       height: 80px;
       @include medium {
-        height: auto;
+        height: 50px;
       }
 
       .logoBlock {

@@ -1,8 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../Layout/Layout";
-import Home from "pages/Home/Home";
-import AboutUs from "pages/AboutUs/AboutUs";
 import { PATHS } from "utils/Constants/Constants";
+import {
+  AboutUs,
+  Home,
+  JeepTours,
+  MotoTours,
+  NotFound,
+  OurMotorbikes,
+  Trekking,
+} from "pages/index";
 
 export const Router = createBrowserRouter([
   {
@@ -18,8 +25,24 @@ export const Router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
+        path: PATHS.jeepTours,
+        element: <JeepTours />,
+      },
+      {
+        path: PATHS.motoTours,
+        element: <MotoTours />,
+      },
+      {
+        path: PATHS.ourMotorbikes,
+        element: <OurMotorbikes />,
+      },
+      {
+        path: PATHS.trekking,
+        element: <Trekking />,
+      },
+      {
         path: PATHS.notFound,
-        element: <div>Page not found!</div>,
+        element: <NotFound />,
       },
     ],
   },

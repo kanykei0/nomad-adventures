@@ -1,8 +1,8 @@
 import { NavigationData } from "utils/Constants/Constants";
-import Typography from "ui/Typography/Typography";
 import { useTranslation } from "react-i18next";
 import classes from "./DesktopNav.module.scss";
 import { Link } from "react-router-dom";
+import { Typography } from "ui/index";
 
 const DesktopNav = () => {
   const { t } = useTranslation();

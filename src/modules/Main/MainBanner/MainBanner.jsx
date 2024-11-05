@@ -1,6 +1,5 @@
-import Typography from "ui/Typography/Typography";
+import { Container, Typography } from "ui/index";
 import classes from "./MainBanner.module.scss";
-import Container from "ui/Container/Container";
 
 const MainBanner = () => {
   return (

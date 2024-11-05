@@ -1,7 +1,7 @@
 import { truncateString } from "utils/Helpers/Helpers";
 import classes from "./Typography.module.scss";
 
-const Typography = ({
+export const Typography = ({
   font = "",
   variant = "body",
   weight = "",
@@ -38,5 +38,3 @@ const Typography = ({
     </TagName>
   );
 };
-
-export default Typography;

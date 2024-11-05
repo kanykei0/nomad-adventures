@@ -5,10 +5,3 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-
-.header {
-  @include medium {
-    padding: 0px;
-    max-width: 100%;
-  }
-}

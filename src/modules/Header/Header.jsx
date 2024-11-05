@@ -1,4 +1,3 @@
-import Container from "ui/Container/Container";
 import classes from "./Header.module.scss";
 import Burger from "./components/BurgerMenu/BurgerMenu";
 import { useState, useEffect } from "react";
@@ -7,8 +6,9 @@ import Logo from "assets/images/logo.svg";
 import SwitchLanguage from "./components/SwitchLanguage/SwitchLanguage";
 import { Link } from "react-router-dom";
 import { PATHS } from "utils/Constants/Constants";
+import { Container } from "ui/index";
 
-const Header = () => {
+export const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -28,30 +28,26 @@ const Header = () => {
 
   return (
     <div className={classes.block}>
-      <Container header>
-        <div className={classes.innerBlock}>
-          <Container>
-            <div className={classes.wrapper}>
-              <Link to={PATHS.home} className={classes.logoBlock}>
-                <img alt="logo" src={Logo} />
-              </Link>
-              <div className={classes.langBlock}>
-                <SwitchLanguage />
-                <div>{isMobile && <Burger />}</div>
-              </div>
+      <div className={classes.innerBlock}>
+        <Container>
+          <div className={classes.wrapper}>
+            <Link to={PATHS.home} className={classes.logoBlock}>
+              <img alt="nomad aventures logo" src={Logo} />
+            </Link>
+            <div className={classes.langBlock}>
+              <SwitchLanguage />
+              <div>{isMobile && <Burger />}</div>
             </div>
-            <div
-              className={`${classes.navVisible} ${
-                isMobile && classes.navInvisible
-              }`}
-            >
-              <DesktopNav />
-            </div>
-          </Container>
-        </div>
-      </Container>
+          </div>
+          <div
+            className={`${classes.navVisible} ${
+              isMobile && classes.navInvisible
+            }`}
+          >
+            <DesktopNav />
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };
-
-export default Header;

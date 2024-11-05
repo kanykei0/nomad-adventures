@@ -1,10 +1,10 @@
-import Main from "modules/Main/Main";
+import { Main } from "modules/index";
 import { useTranslation } from "react-i18next";
-import Button from "ui/Button/Button";
-import Typography from "ui/Typography/Typography";
+import { Button, Typography } from "ui/index";
 
-const Home = () => {
+export const Home = () => {
   const { t } = useTranslation();
+
   return (
     <div>
       <Main />
@@ -13,5 +13,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

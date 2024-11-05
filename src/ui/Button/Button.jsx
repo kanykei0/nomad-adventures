@@ -1,8 +1,8 @@
 import ArrowIcon from "assets/icons/ArrowIcon";
-import Typography from "ui/Typography/Typography";
 import classes from "./Button.module.scss";
+import { Typography } from "ui/Typography/Typography";
 
-const Button = ({
+export const Button = ({
   variant = "primary",
   text,
   size,
@@ -30,5 +30,3 @@ const Button = ({
     </button>
   );
 };
-
-export default Button;
