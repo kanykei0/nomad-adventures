@@ -1,4 +1,4 @@
-import ArrowIcon from "assets/icons/ArrowIcon";
+import { ArrowIcon } from "assets/icons/ArrowIcon";
 import classes from "./Button.module.scss";
 import { Typography } from "ui/Typography/Typography";
 

@@ -1,3 +1,10 @@
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TelegramIcon,
+  WhatsappIcon,
+} from "assets/icons";
+
 export const PATHS = {
   home: "/",
   aboutUs: "/about-us",
@@ -16,4 +23,11 @@ export const NavigationData = [
   { text: "nav.jeepTours", path: PATHS.jeepTours },
   { text: "nav.trekking", path: PATHS.trekking },
   { text: "nav.placesInKG", path: PATHS.placesInKG },
+];
+
+export const SocialMediaLinks = [
+  { icon: <InstagramIcon />, link: "" },
+  { icon: <FacebookIcon />, link: "" },
+  { icon: <TelegramIcon />, link: "" },
+  { icon: <WhatsappIcon />, link: "" },
 ];

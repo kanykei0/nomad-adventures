@@ -1,0 +1,45 @@
+@use "styles/mixin" as *;
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  .block {
+    @include medium {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer_inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .footer_inner__logo {
+        width: 80px;
+      }
+
+      .socialLink {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        a {
+          display: block;
+          width: 30px;
+          transition: fill 0.3s;
+
+          svg:hover {
+            fill: var(--color-dark);
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+
+    .footer_bottom {
+      text-align: center;
+    }
+  }
+}

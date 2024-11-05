@@ -1,4 +1,4 @@
-import BurgerIcon from "assets/icons/BurgerIcon";
+import { BurgerIcon } from "assets/icons/BurgerIcon";
 import classes from "./BurgerMenu.module.scss";
 import { OpenMenu } from "./components/OpenMenu";
 import { useEffect, useState } from "react";
