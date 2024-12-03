@@ -1,0 +1,113 @@
+@use "styles/mixin" as *;
+
+.block {
+  position: relative;
+  margin: 60px auto 50px;
+  max-width: 900px;
+  padding-bottom: 20px;
+
+  @include medium {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 120px auto 80px;
+    padding-bottom: 90px;
+  }
+
+  .image {
+    display: none;
+    @include medium {
+      display: block;
+    }
+  }
+  .imageInvise {
+    display: block;
+    @include medium {
+      display: none;
+    }
+  }
+
+  .image,
+  .imageInvise {
+    max-width: 100%;
+    height: 230px;
+
+    @include small {
+      height: 350px;
+    }
+
+    @include medium {
+      max-width: 250px;
+      height: 440px;
+    }
+
+    @include large {
+      max-width: 300px;
+      height: 550px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+  .info {
+    max-width: 100%;
+
+    @include medium {
+      max-width: 580px;
+      flex: 1;
+    }
+    .lilTitle {
+      text-transform: uppercase;
+    }
+    .title {
+      text-transform: uppercase;
+      margin: 10px 0 20px;
+    }
+    .desc {
+      margin-top: 20px;
+    }
+    .services {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include small {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      @include medium {
+        justify-content: start;
+      }
+    }
+  }
+  .bottom {
+    display: none;
+
+    @include large {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+
+      &_image {
+        width: 330px;
+        height: 150px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      &_imageLeft {
+        padding: 15px;
+        background-color: var(--color-white);
+        box-sizing: content-box;
+      }
+    }
+  }
+}

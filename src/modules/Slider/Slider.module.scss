@@ -1,0 +1,47 @@
+.block {
+  :global {
+    .swiper {
+      position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--color-white);
+
+      &::after {
+        font-size: 22px;
+      }
+
+      background: rgba(35, 35, 35, 0.8);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swiper-button-prev {
+      left: 5px;
+
+      &::after {
+        margin-right: 2px;
+      }
+    }
+
+    .swiper-button-next {
+      right: 5px;
+
+      &::after {
+        margin-left: 2px;
+      }
+    }
+
+    .slide {
+      margin: 0 auto;
+      flex: 1 0 auto;
+      width: auto;
+    }
+  }
+}

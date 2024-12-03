@@ -7,7 +7,6 @@
 
 .h1 {
   font-size: 30px;
-  font-weight: 600;
   @include medium {
     font-size: 40px;
   }
@@ -15,9 +14,9 @@
     font-size: 50px;
   }
 }
+
 .h2 {
   font-size: 22px;
-  font-weight: 600;
   @include medium {
     font-size: 24px;
   }
@@ -25,6 +24,28 @@
     font-size: 28px;
   }
 }
+
+.h4 {
+  font-size: 18px;
+  @include medium {
+    font-size: 20px;
+  }
+  @include large {
+    font-size: 24px;
+  }
+}
+
+.head {
+  font-family: g-bold;
+  font-size: 23px;
+  @include medium {
+    font-size: 26px;
+  }
+  @include large {
+    font-size: 29px;
+  }
+}
+
 .body,
 .button {
   font-size: 14px;
@@ -54,23 +75,42 @@
   }
 }
 
-.extraBold {
-  font-weight: 700;
+.ultraLight {
+  font-family: g-ultraLight;
+}
+
+.light {
+  font-family: g-light;
+}
+
+.regular {
+  font-family: g-regular;
+}
+
+.medium {
+  font-family: g-medium;
+}
+
+.semiBold {
+  font-family: g-semiBold;
 }
 
 .bold {
-  font-family: gilroy-b;
+  font-family: g-bold;
 }
 
 .black {
   color: var(--color-black);
 }
+
 .white {
   color: var(--color-white);
 }
+
 .gray {
   color: var(--color-gray);
 }
+
 .primary {
   color: var(--color-primary);
 }

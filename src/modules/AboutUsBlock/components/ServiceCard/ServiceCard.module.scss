@@ -1,0 +1,30 @@
+@use "styles/mixin" as *;
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 200px;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-opGray);
+  box-sizing: content-box;
+
+  @include small {
+    padding: 20px 0;
+  }
+
+  @include medium {
+    border-bottom: none;
+    padding: 20px 0;
+    box-sizing: border-box;
+    max-width: 220px;
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+  .info {
+    flex: 1;
+  }
+}

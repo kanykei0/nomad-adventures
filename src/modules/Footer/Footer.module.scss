@@ -1,7 +1,7 @@
 @use "styles/mixin" as *;
 
 .footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-dark);
   color: var(--color-white);
 
   .block {
@@ -40,6 +40,7 @@
 
     .footer_bottom {
       text-align: center;
+      padding-bottom: 15px;
     }
   }
 }

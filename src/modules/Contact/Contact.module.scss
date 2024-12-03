@@ -1,0 +1,46 @@
+.block {
+  margin: 70px 0 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .images {
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dark);
+    width: 500px;
+    z-index: -2;
+
+    .text {
+      position: absolute;
+      transform: rotate(-90deg);
+      text-transform: uppercase;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 38px;
+      left: 200px;
+      width: 470px;
+      height: 470px;
+      background-image: url("../../assets/images/barani.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .image {
+      width: 250px;
+      margin-left: 100px;
+    }
+  }
+  .info {
+    max-width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

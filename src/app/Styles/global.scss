@@ -1,13 +1,33 @@
 @use "_variables.scss" as *;
 
 @font-face {
-  font-family: gilroy-l;
-  src: url(./fonts/Gilroy-Light.otf);
+  font-family: g-ultraLight;
+  src: url(./fonts/Gilroy-UltraLight.ttf);
 }
 
 @font-face {
-  font-family: gilroy-b;
-  src: url(./fonts/Gilroy-ExtraBold.otf);
+  font-family: g-light;
+  src: url(./fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+  font-family: g-regular;
+  src: url(./fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: g-medium;
+  src: url(./fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: g-semiBold;
+  src: url(./fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: g-bold;
+  src: url(./fonts/Gilroy-Bold.ttf);
 }
 
 * {
@@ -18,7 +38,7 @@
 
 body {
   color: var(--color-black);
-  font-family: gilroy-l;
+  font-family: g-light;
   font-weight: 400;
 }
 

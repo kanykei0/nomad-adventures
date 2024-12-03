@@ -1,3 +1,9 @@
+import { MotoDetailPage } from "pages/MotoDetailPage/MotoDetail";
+
 export const AboutUs = () => {
-  return <div>About us</div>;
+  return (
+    <div>
+      <MotoDetailPage />
+    </div>
+  );
 };
