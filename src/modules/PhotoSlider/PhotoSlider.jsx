@@ -2,9 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import classes from "./PhotoSlider.module.scss";
 
-export const PhotoSlider = ({ list }) => {
+export const PhotoSlider = ({ list, long }) => {
   return (
-    <div className={classes.block}>
+    <div className={long ? classes.long : classes.block}>
       <Swiper
         className={classes.swiper}
         modules={[Navigation, Pagination, A11y, Autoplay]}

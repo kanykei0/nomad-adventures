@@ -4,12 +4,11 @@ import { PATHS } from "utils/Constants/Constants";
 import {
   AboutUs,
   Home,
-  JeepTours,
   MotoDetailPage,
-  MotoTours,
   NotFound,
   OurMotorbikes,
-  Trekking,
+  TourDetailPage,
+  Tours,
 } from "pages/index";
 
 export const Router = createBrowserRouter([
@@ -26,20 +25,16 @@ export const Router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: PATHS.jeepTours,
-        element: <JeepTours />,
-      },
-      {
-        path: PATHS.motoTours,
-        element: <MotoTours />,
-      },
-      {
         path: PATHS.ourMotorbikes,
         element: <OurMotorbikes />,
       },
       {
-        path: PATHS.trekking,
-        element: <Trekking />,
+        path: PATHS.tours,
+        element: <Tours />,
+      },
+      {
+        path: PATHS.tourDetail,
+        element: <TourDetailPage />,
       },
       {
         path: PATHS.motoDetail,

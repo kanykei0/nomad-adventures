@@ -64,3 +64,67 @@
     }
   }
 }
+
+.long {
+  :global {
+    .swiper {
+      max-width: 100%;
+
+      @include large {
+        padding: 0 20px;
+        max-width: 1220px;
+        margin: 0 auto;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--color-white);
+
+      &::after {
+        font-size: 22px;
+      }
+
+      background: rgba(35, 35, 35, 0.8);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swiper-button-prev {
+      &::after {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .slide {
+    .image {
+      margin: 0 auto;
+      max-width: 90%;
+      height: 250px;
+
+      @include small {
+        height: 400px;
+      }
+
+      @include medium {
+        height: 400px;
+      }
+
+      @include large {
+        max-width: 100%;
+        height: 500px;
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin: 30px 0 50px;
+
+  @include medium {
+    margin: 50px 0;
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .titleBlock {
+    display: flex;
+    margin: 20px 0 15px;
+
+    svg {
+      width: 26px;
+
+      @include large {
+        width: 30px;
+      }
+    }
+
+    .title {
+      margin-top: 6px;
+    }
+  }
+  .routesList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+
+    .routeItem {
+      display: flex;
+      gap: 6px;
+
+      &_link {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

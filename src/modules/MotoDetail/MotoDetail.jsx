@@ -1,10 +1,9 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { PhotoSlider } from "modules/PhotoSlider/PhotoSlider";
 import { MotoList } from "utils/Constants/Constants";
 import classes from "./MotoDetail.module.scss";
 import { MotoCard, Typography } from "ui/index";
 import { Characteristics } from "./components/Characteristics";
-import { Slider } from "..";
+import { PhotoSlider, Slider } from "..";
 import { ArrowIcon } from "assets/icons";
 
 export const MotoDetail = () => {

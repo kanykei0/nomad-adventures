@@ -3,13 +3,13 @@ import classes from "./ToursCard.module.scss";
 import { Typography } from "..";
 
 export const ToursCard = ({ items }) => {
-  const { id, title, description, image, type } = items;
+  const { id, title, description, images, type } = items;
 
   return (
     <div className={classes.card}>
-      <Link to={id}>
+      <Link to={"/tours/" + id}>
         <div className={classes.card_img}>
-          <img src={image} alt={title} />
+          <img src={images[0]} alt={title} />
         </div>
         <div className={classes.info}>
           <Typography className={classes.title} variant="h4" weight="semiBold">

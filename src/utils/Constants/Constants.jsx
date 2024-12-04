@@ -9,7 +9,11 @@ import MotoImg from "assets/images/ImageItem.png";
 import MotoImg1 from "assets/images/MotoItem1.jpg";
 import MotoImg2 from "assets/images/manOnBike.jpg";
 import MotoImg3 from "assets/images/mainbanner.jpg";
+
 import toursImg from "assets/images/toursImg.png";
+import toursImg1 from "assets/images/kelsuu.jpg";
+import toursImg2 from "assets/images/horses.jpg";
+import toursImg3 from "assets/images/barani.jpg";
 
 import motoIcon from "assets/images/motoIcon.png";
 import MotoPart from "assets/images/motoPartIcon.webp";
@@ -21,9 +25,8 @@ export const PATHS = {
   aboutUs: "/about-us",
   ourMotorbikes: "/our-motorbikes",
   motoDetail: "/our-motorbikes/:id",
-  motoTours: "/moto-tours",
-  jeepTours: "/jeep-tours",
-  trekking: "/trekking",
+  tours: "/tours",
+  tourDetail: "/tours/:id",
   placesInKG: "/places-in-Kyrgyzstan",
   notFound: "*",
 };
@@ -31,9 +34,7 @@ export const PATHS = {
 export const NavigationData = [
   { text: "nav.aboutUs", path: PATHS.aboutUs },
   { text: "nav.ourMotorbikes", path: PATHS.ourMotorbikes },
-  { text: "nav.motoTours", path: PATHS.motoTours },
-  { text: "nav.jeepTours", path: PATHS.jeepTours },
-  { text: "nav.trekking", path: PATHS.trekking },
+  { text: "nav.tours", path: PATHS.tours },
   { text: "nav.placesInKG", path: PATHS.placesInKG },
 ];
 
@@ -240,123 +241,189 @@ export const MotoList = [
 
 export const ToursList = [
   {
-    id: "/",
+    id: "0",
     title: "Zheti Oguz",
     description:
-      "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+      "Zheti-Oguz (translated from Kyrgyz as ‘Seven Bulls’) is a picturesque gorge in the Issyk-Kul region of Kyrgyzstan, located about 25 kilometres west of the town of Karakol. This place is famous for its impressive red rocks that resemble bulls lying side by side, hence its name. The gorge stretches for about 37 kilometres, surrounded by dense coniferous forests and alpine meadows, making it popular among tourists and nature lovers.\r\n\r\nThe main attractions of Jeti-Oguz:\r\n\r\nRed Rocks: The calling card of the gorge is a series of huge red sandstonecliffs, one of which is the famous ‘Broken Heart’ formation. Legend has it that the rock symbolises the broken heart of lovers.\r\n\r\nHot springs of Jeti-Oguz: There are several mineral hot springs on the territory of the gorge, where people come for recreation and recovery.\r\n\r\nHiking and Trekking: Jeti-Oguz is ideal for hiking, trekking and camping. Popular routes lead to waterfalls, flowering meadows and high mountain pastures.\r\n\r\nYurt Camps: In the gorge you can stay in traditional Kyrgyz yurts, allowing you to get a closer look at the culture and traditions of the locals.\r\nZheti-Oguz is a place where unique natural landscapes and cultural heritage harmoniously combine, attracting travellers all year round.",
+    images: [toursImg2, toursImg],
     type: "moto tour, jeep tour",
+    routes: [
+      {
+        tourType: "Moto tour",
+        link: "https://www.outdooractive.ru/ru/map/#area=*&bm=osm%3Asummer&caml=84i,bqgjqg,70rwct,0,0&wt=Koksay%20(border%20Kyrgyzstan%20-%20Kazakhstan)%20(%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD)&zc=11.52954,70.957,42.45649",
+      },
+      {
+        tourType: "Jeep tour",
+        link: "https://kyrgyzstan-tourism.com/tours/lake-alakol-3-days-trekking/",
+      },
+    ],
   },
   {
-    id: "/",
-    title: "Zheti Oguz",
+    id: "1",
+    title: "Kel Suu",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg1, toursImg2, toursImg],
     type: "moto tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "2",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "3",
     title: "Zheti Oguz",
     description:
-      "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+      "Zheti-Oguz (translated from Kyrgyz as ‘Seven Bulls’) is a picturesque gorge in the Issyk-Kul region of Kyrgyzstan, located about 25 kilometres west of the town of Karakol. This place is famous for its impressive red rocks that resemble bulls lying side by side, hence its name. The gorge stretches for about 37 kilometres, surrounded by dense coniferous forests and alpine meadows, making it popular among tourists and nature lovers.\r\n\r\nThe main attractions of Jeti-Oguz:\r\n\r\nRed Rocks: The calling card of the gorge is a series of huge red sandstonecliffs, one of which is the famous ‘Broken Heart’ formation. Legend has it that the rock symbolises the broken heart of lovers.\r\n\r\nHot springs of Jeti-Oguz: There are several mineral hot springs on the territory of the gorge, where people come for recreation and recovery.\r\n\r\nHiking and Trekking: Jeti-Oguz is ideal for hiking, trekking and camping. Popular routes lead to waterfalls, flowering meadows and high mountain pastures.\r\n\r\nYurt Camps: In the gorge you can stay in traditional Kyrgyz yurts, allowing you to get a closer look at the culture and traditions of the locals.\r\nZheti-Oguz is a place where unique natural landscapes and cultural heritage harmoniously combine, attracting travellers all year round.",
+    images: [toursImg3, toursImg1, toursImg2],
     type: "jeep tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "4",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg, toursImg3],
     type: "jeep tour, trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "5",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "moto tour, jeep tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "6",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "moto tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "7",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "8",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "jeep tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "9",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "jeep tour, trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "10",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "moto tour, jeep tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "11",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "moto tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "12",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "13",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "jeep tour",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
   {
-    id: "/",
+    id: "14",
     title: "Zheti Oguz",
     description:
       "A picturesque mountain gorge in Kyrgyzstan, located 28 kilometres west of the town of Karakol (formerly Przhevalsk) on the southern shore of the Issyk-Kul.",
-    image: toursImg,
+    images: [toursImg],
     type: "jeep tour, trekking",
+    routes: [
+      { tourType: "Moto tour", link: "#" },
+      { tourType: "Jeep tour", link: "#" },
+    ],
   },
 ];
