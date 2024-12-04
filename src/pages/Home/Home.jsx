@@ -10,11 +10,9 @@ export const Home = () => {
         <AboutUsBlock />
         <Heading withBtn="/about-us">Our Motorbikes</Heading>
         <Slider list={MotoList} Card={MotoCard} />
-
-        <Contact />
-
         <Heading withBtn="/about-us">Tours</Heading>
         <Slider list={ToursList} Card={ToursCard} />
+        <Contact />
       </Container>
     </div>
   );

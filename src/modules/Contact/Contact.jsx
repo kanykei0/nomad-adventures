@@ -1,4 +1,4 @@
-import { Typography } from "ui/index";
+import { ContactUs, Typography } from "ui/index";
 import classes from "./Contact.module.scss";
 import yurta from "assets/images/yurtaa.jpeg";
 
@@ -13,11 +13,7 @@ export const Contact = () => {
           <img src={yurta} alt="Kyrgyzstan" />
         </div>
       </div>
-      <div className={classes.info}>
-        <Typography variant="h2">
-          Learn more about kyrgyzstan by choosing the right path for travel
-        </Typography>
-      </div>
+      <ContactUs bgWhite />
     </div>
   );
 };

@@ -5,3 +5,4 @@ export { FacebookIcon } from "./FacebookIcon";
 export { InstagramIcon } from "./InstagramIcon";
 export { TelegramIcon } from "./TelegramIcon";
 export { WhatsappIcon } from "./WhatsappIcon";
+export { PhoneIcon } from "./PhoneIcon";

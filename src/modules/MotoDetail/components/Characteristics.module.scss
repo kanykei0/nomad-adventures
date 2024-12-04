@@ -1,0 +1,47 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin-top: 30px;
+
+  @include medium {
+    margin-top: 60px;
+  }
+
+  .wrapper {
+    @include large {
+      display: flex;
+      gap: 40px;
+      align-items: start;
+    }
+    .info {
+      margin: 20px 0 30px;
+      border-radius: 12px;
+      background: rgba(234, 234, 234, 0.5);
+      padding: 12px 20px;
+      @include large {
+        flex-grow: 1;
+      }
+
+      ul {
+        .li {
+          display: flex;
+          gap: 6px;
+          margin: 9px 0;
+
+          .li_value {
+            flex: 1;
+          }
+        }
+      }
+    }
+    .contact {
+      margin: 20px 0 30px;
+      border-radius: 12px;
+      background: rgba(234, 234, 234, 0.5);
+      max-width: 400px;
+      @include large {
+        flex-grow: 1;
+      }
+    }
+  }
+}

@@ -3,13 +3,13 @@ import { Typography } from "..";
 import classes from "./MotoCard.module.scss";
 
 export const MotoCard = ({ items }) => {
-  const { id, title, image, year, type, make, cost_1, cost_2 } = items;
+  const { id, title, images, year, type, make, cost_1, cost_2 } = items;
 
   return (
     <div className={classes.card}>
-      <Link to={id}>
+      <Link to={"/our-motorbikes/" + id}>
         <div className={classes.card_img}>
-          <img src={image} alt={title} />
+          <img src={images[0]} alt={title} />
         </div>
         <div className={classes.info_motoList}>
           <div className={classes.info_motoItem}>

@@ -1,0 +1,66 @@
+@use "styles/mixin" as *;
+
+.block {
+  :global {
+    .swiper {
+      max-width: 100%;
+
+      @include medium {
+        max-width: 570px;
+      }
+
+      @include large {
+        max-width: 710px;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--color-white);
+
+      &::after {
+        font-size: 22px;
+      }
+
+      background: rgba(35, 35, 35, 0.8);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .swiper-button-prev {
+      &::after {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .slide {
+    .image {
+      margin: 0 auto;
+      max-width: 90%;
+      height: 250px;
+
+      @include small {
+        height: 400px;
+      }
+
+      @include medium {
+        max-width: 500px;
+      }
+
+      @include large {
+        max-width: 680px;
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+  }
+}

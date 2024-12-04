@@ -1,5 +1,6 @@
 import { truncateString } from "utils/Helpers/Helpers";
 import classes from "./Typography.module.scss";
+import React from "react";
 
 export const Typography = ({
   font = "",
@@ -32,9 +33,24 @@ export const Typography = ({
 
   const TagName = Tags[variant] || "p";
 
+  const convertNewlinesToBreaks = (text) => {
+    if (typeof text === "string") {
+      return text.split("\r\n").map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ));
+    } else {
+      return text;
+    }
+  };
+
   return (
     <TagName id={id} className={classNameGenerated}>
-      {!truncate ? children : truncateString(children, truncate)}
+      {!truncate
+        ? convertNewlinesToBreaks(children)
+        : truncateString(children, truncate)}
     </TagName>
   );
 };

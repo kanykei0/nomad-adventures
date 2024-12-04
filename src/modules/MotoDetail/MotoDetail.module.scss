@@ -1,0 +1,56 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin: 30px 0 50px;
+
+  @include medium {
+    margin: 50px 0;
+  }
+  .wrapper {
+    @include medium {
+      display: flex;
+    }
+    @include large {
+      gap: 40px;
+    }
+  }
+
+  .btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .description {
+    margin-top: 25px;
+    @include large {
+      margin-top: 10px;
+    }
+
+    &_text {
+      margin: 15px 0;
+
+      @include large {
+        margin: 30px 0;
+      }
+    }
+
+    .info_rent {
+      width: 100%;
+      border-collapse: collapse;
+
+      td {
+        border: 1px solid var(--color-opBlack);
+        padding: 8px;
+      }
+    }
+  }
+}

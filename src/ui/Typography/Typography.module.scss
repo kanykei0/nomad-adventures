@@ -25,6 +25,16 @@
   }
 }
 
+.h3 {
+  font-size: 21px;
+  @include medium {
+    font-size: 20px;
+  }
+  @include large {
+    font-size: 19px;
+  }
+}
+
 .h4 {
   font-size: 18px;
   @include medium {

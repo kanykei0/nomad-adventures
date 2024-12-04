@@ -5,6 +5,7 @@ import {
   AboutUs,
   Home,
   JeepTours,
+  MotoDetailPage,
   MotoTours,
   NotFound,
   OurMotorbikes,
@@ -39,6 +40,10 @@ export const Router = createBrowserRouter([
       {
         path: PATHS.trekking,
         element: <Trekking />,
+      },
+      {
+        path: PATHS.motoDetail,
+        element: <MotoDetailPage />,
       },
       {
         path: PATHS.notFound,
