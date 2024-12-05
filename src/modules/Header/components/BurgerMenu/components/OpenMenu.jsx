@@ -27,6 +27,13 @@ export const OpenMenu = ({ isClose, setIsClose }) => {
         </div>
         <div className={classes.navBottom}>
           <ul className={classes.navList}>
+            <li>
+              <Link to="/">
+                <Typography className={classes.navList_text} variant="body">
+                  {t("nav.home")}
+                </Typography>
+              </Link>
+            </li>
             {NavigationData.map((nav, key) => (
               <li key={key}>
                 <Link to={nav.path}>

@@ -1,16 +1,39 @@
 @use "styles/mixin" as *;
 
 .block {
+  position: relative;
+
   .imgBlock {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     overflow: hidden;
     background-image: url("../../../assets/images/mainbanner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    @include medium {
-      height: calc(100vh - 99.5px);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .text {
+    margin-top: 40vh;
+    max-width: 611px;
+    .desc {
+      margin: 15px 0 30px;
     }
   }
 }

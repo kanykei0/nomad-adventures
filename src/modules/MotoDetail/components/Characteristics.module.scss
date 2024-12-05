@@ -1,10 +1,10 @@
 @use "styles/mixin" as *;
 
 .block {
-  margin-top: 30px;
+  margin: 30px 0 50px;
 
   @include medium {
-    margin-top: 60px;
+    margin: 60px 0 70px;
   }
 
   .wrapper {

@@ -1,0 +1,28 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin: 150px 0 50px;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+
+    @include small {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include medium {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include large {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

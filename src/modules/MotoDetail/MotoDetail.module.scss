@@ -1,11 +1,8 @@
 @use "styles/mixin" as *;
 
 .block {
-  margin: 30px 0 50px;
+  margin: 150px 0 50px;
 
-  @include medium {
-    margin: 50px 0;
-  }
   .wrapper {
     @include medium {
       display: flex;

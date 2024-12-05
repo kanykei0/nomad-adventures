@@ -13,7 +13,9 @@ const DesktopNav = () => {
         {NavigationData.map((nav, index) => (
           <li key={index} className={classes.li}>
             <Link to={nav.path}>
-              <Typography className={classes.text}>{t(nav.text)}</Typography>
+              <Typography weight="medium" className={classes.text}>
+                {t(nav.text)}
+              </Typography>
             </Link>
           </li>
         ))}

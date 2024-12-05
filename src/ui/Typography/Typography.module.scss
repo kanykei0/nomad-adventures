@@ -6,12 +6,12 @@
 }
 
 .h1 {
-  font-size: 30px;
+  font-size: 24px;
   @include medium {
-    font-size: 40px;
+    font-size: 35px;
   }
   @include large {
-    font-size: 50px;
+    font-size: 48px;
   }
 }
 

@@ -35,6 +35,7 @@ export const Header = () => {
               <Link to={PATHS.home} className={classes.logoBlock}>
                 <img alt="nomad aventures logo" src={Logo} />
               </Link>
+              {!isMobile && <DesktopNav />}
               <div className={classes.langBlock}>
                 <SwitchLanguage />
                 <div>{isMobile && <Burger />}</div>
@@ -44,9 +45,7 @@ export const Header = () => {
               className={`${classes.navVisible} ${
                 isMobile && classes.navInvisible
               }`}
-            >
-              <DesktopNav />
-            </div>
+            ></div>
           </Container>
         </div>
       </div>

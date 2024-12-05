@@ -1,5 +1,6 @@
+@use "styles/mixin" as *;
+
 .card {
-  margin: 60px 0;
   border: 1px solid var(--color-opGray);
   padding-bottom: 10px;
   border-radius: 8px;

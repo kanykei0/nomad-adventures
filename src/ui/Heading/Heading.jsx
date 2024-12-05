@@ -6,7 +6,7 @@ export const Heading = ({ children, withBtn }) => {
   const navigate = useNavigate();
 
   return (
-    <div className={withBtn && classes.block}>
+    <div className={withBtn ? classes.block : classes.inner}>
       <Typography className={classes.heading} variant="head">
         {children}
       </Typography>
