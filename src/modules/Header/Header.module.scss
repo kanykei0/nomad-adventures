@@ -12,8 +12,11 @@
   }
 
   .innerBlock {
-    padding: 20px 0;
+    padding: 0;
     background-color: var(--color-white);
+    @include medium {
+      padding: 20px 0;
+    }
 
     .wrapper {
       @include flexbox(space-between, center);
