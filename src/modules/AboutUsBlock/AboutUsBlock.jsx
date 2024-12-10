@@ -1,12 +1,14 @@
-import { Typography } from "ui/index";
-import classes from "./AboutUsBlock.module.scss";
-import manBike from "assets/images/manOnBike.jpg";
-import { AboutServicesList } from "utils/Constants/Constants";
-import { ServiceCard } from "./components/ServiceCard/ServiceCard";
 import horses from "assets/images/horses.jpg";
 import kelsuu from "assets/images/kelsuu.jpg";
+import manBike from "assets/images/manOnBike.jpg";
+import { useTranslation } from "react-i18next";
+import { Typography } from "ui/index";
+import { AboutServicesList } from "utils/Constants/Constants";
+import classes from "./AboutUsBlock.module.scss";
+import { ServiceCard } from "./components/ServiceCard/ServiceCard";
 
 export const AboutUsBlock = () => {
+  const { t } = useTranslation();
   return (
     <div className={classes.block}>
       <div className={classes.image}>
@@ -19,20 +21,16 @@ export const AboutUsBlock = () => {
           color="primary"
           className={classes.lilTitle}
         >
-          Taking rides to a never level
+          {t("aboutUsBlock.takingRidesTitle")}
         </Typography>
         <Typography variant="head" className={classes.title}>
-          great perfomance matters in future
+          {t("aboutUsBlock.greatPerformanceTitle")}
         </Typography>
         <div className={classes.imageInvise}>
           <img src={manBike} alt="bike" />
         </div>
         <Typography className={classes.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae
-          pariatur eligendi sequi, facilis quod! Sit soluta saepe sunt laborum
-          esse sint labore assumenda aliquid rerum, obcaecati dolore
-          exercitationem hic facere beatae neque facilis dolor tenetur
-          consequatur est.
+          {t("aboutUsBlock.description")}
         </Typography>
         <div className={classes.services}>
           {AboutServicesList.map((item, key) => (

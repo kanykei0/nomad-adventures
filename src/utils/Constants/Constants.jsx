@@ -5,20 +5,15 @@ import {
   WhatsappIcon,
 } from "assets/icons";
 
-import MotoImg from "assets/images/ImageItem.png";
-import MotoImg1 from "assets/images/MotoItem1.jpg";
-import MotoImg2 from "assets/images/manOnBike.jpg";
-import MotoImg3 from "assets/images/mainbanner.jpg";
-
-import toursImg from "assets/images/toursImg.png";
-import toursImg1 from "assets/images/kelsuu.jpg";
-import toursImg2 from "assets/images/horses.jpg";
 import toursImg3 from "assets/images/barani.jpg";
+import toursImg2 from "assets/images/horses.jpg";
+import toursImg1 from "assets/images/kelsuu.jpg";
+import toursImg from "assets/images/toursImg.png";
 
+import guideIcon from "assets/images/guideIcon.jpg";
 import motoIcon from "assets/images/motoIcon.png";
 import MotoPart from "assets/images/motoPartIcon.webp";
 import toursIcon from "assets/images/toursIcon.png";
-import guideIcon from "assets/images/guideIcon.jpg";
 
 export const PATHS = {
   home: "/",
@@ -74,11 +69,23 @@ export const ContactBlock = [
   },
 ];
 
+import MotoImg1 from "assets/images/moto_1.1.jpeg";
+import MotoImg from "assets/images/moto_1.jpeg";
+import MotoImg2_1 from "assets/images/moto_2.1.jpeg";
+import MotoImg2 from "assets/images/moto_2.jpeg";
+import MotoImg3 from "assets/images/moto_3.jpeg";
+import MotoImg4 from "assets/images/moto_4.1.jpeg";
+import MotoImg5 from "assets/images/moto_4.jpeg";
+import MotoImg6 from "assets/images/moto_5.1.jpeg";
+import MotoImg7 from "assets/images/moto_5.jpeg";
+import MotoImg8 from "assets/images/moto_6.jpeg";
+import MotoImg9 from "assets/images/moto_7.jpeg";
+
 export const MotoList = [
   {
     id: "0",
     title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3, MotoImg, MotoImg1],
+    images: [MotoImg1, MotoImg],
     year: "2023",
     type: "Single-cylinder",
     make: "BMW",
@@ -105,7 +112,7 @@ export const MotoList = [
   {
     id: "1",
     title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3, MotoImg, MotoImg1],
+    images: [MotoImg2_1, MotoImg2],
     year: "2017",
     type: "Travel",
     make: "YAMAHA",
@@ -132,7 +139,7 @@ export const MotoList = [
   {
     id: "2",
     title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1],
+    images: [MotoImg3],
     year: "2023",
     type: "Sports",
     make: "BMW",
@@ -159,7 +166,7 @@ export const MotoList = [
   {
     id: "3",
     title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
+    images: [MotoImg4, MotoImg5],
     year: "2017",
     type: "Travel",
     make: "YAMAHA",
@@ -186,7 +193,7 @@ export const MotoList = [
   {
     id: "4",
     title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
+    images: [MotoImg7, MotoImg6],
     year: "2023",
     type: "Sports",
     make: "BMW",
@@ -213,7 +220,34 @@ export const MotoList = [
   {
     id: "5",
     title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
+    images: [MotoImg8],
+    year: "2017",
+    type: "Travel",
+    make: "YAMAHA",
+    cost_1: "80",
+    cost_2: "60",
+    description:
+      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+    characteristics: [
+      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Displacement", value: "250cc" },
+      { name: "Bore and stroke", value: "76 x 55 mm" },
+      { name: "Compression ratio", value: "10.7:1" },
+      { name: "Valvetrain", value: "DOHC, four valves" },
+      { name: "Fueling", value: "EFI w/38mm throttle body" },
+      { name: "Cooling", value: "Liquid" },
+      { name: "Transmission", value: "6-speed" },
+      { name: "Final drive", value: "520 chain" },
+      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
+      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
+      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
+      { name: "Rear brake", value: "220mm disc" },
+    ],
+  },
+  {
+    id: "6",
+    title: "YAMAHA XT",
+    images: [MotoImg9],
     year: "2017",
     type: "Travel",
     make: "YAMAHA",

@@ -12,5 +12,36 @@
 
   "homePage": {
     "hello": "Hello World"
+  },
+
+  "mainBanner": {
+    "title": "Explore the Rugged Kyrgyz Landscapes on Motorbike",
+    "description": "Experience the thrill of riding through the breathtaking mountains and valleys of Kyrgyzstan on our powerful motorbikes",
+    "buttonText": "Contact"
+  },
+
+  "aboutUsBlock": {
+    "takingRidesTitle": "Taking rides to a never level",
+    "greatPerformanceTitle": "Great performance matters in future",
+    "description": "We believe in taking your riding experience to the next level. Get ready for scenic views, rugged terrains, and the thrill of riding through some of the most stunning landscapes on the planet."
+  },
+
+  "aboutServices": {
+    "motoRent": {
+      "title": "Moto rent",
+      "desc": "Rent simply and quickly"
+    },
+    "guarantee": {
+      "title": "Guarantee",
+      "desc": "Guarantee of motorcycle reliability"
+    },
+    "tours": {
+      "title": "Tours",
+      "desc": "Routes for any type of tour"
+    },
+    "guide": {
+      "title": "Guide",
+      "desc": "Support for safe travel"
+    }
   }
 }
