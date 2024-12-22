@@ -26,12 +26,12 @@
 }
 
 .h3 {
-  font-size: 21px;
+  font-size: 19px;
   @include medium {
     font-size: 20px;
   }
   @include large {
-    font-size: 19px;
+    font-size: 21px;
   }
 }
 
@@ -66,6 +66,7 @@
     font-size: 16px;
   }
 }
+
 .smallBody {
   font-size: 12px;
   @include medium {

@@ -1,0 +1,51 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin: 110px 0 50px;
+
+  @include medium {
+    margin: 150px 0 50px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    @include medium {
+      flex-direction: row;
+    }
+
+    .textBlock {
+      max-width: 900px;
+      .welcomeText {
+        margin-bottom: 15px;
+      }
+      .chooseUs {
+        margin: 20px 0 10px;
+      }
+      .olList {
+        padding-left: 17px;
+        &_desc {
+          margin: 5px 0 15px;
+        }
+      }
+    }
+    .imageBlock {
+      height: 200px;
+      width: 100%;
+      @include medium {
+        height: auto;
+      }
+      img {
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+  .bottomImage {
+    margin-top: 30px;
+    img {
+      border-radius: 8px;
+    }
+  }
+}

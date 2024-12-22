@@ -52,7 +52,6 @@ export const TourSelect = ({
           <path d="M19 9l-7 7-7-7" />
         </svg>
       </div>
-
       {isOpen && (
         <div className={classes.select__options}>
           {options.map((option) => (

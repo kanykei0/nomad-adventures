@@ -7,3 +7,4 @@ export { AboutUsBlock } from "./AboutUsBlock/AboutUsBlock";
 export { Contact } from "./Contact/Contact";
 export { PhotoSlider } from "./PhotoSlider/PhotoSlider";
 export { TourSelect } from "./TourSelect/TourSelect";
+export { ImageModal } from "./ImageModal/ImageModal";

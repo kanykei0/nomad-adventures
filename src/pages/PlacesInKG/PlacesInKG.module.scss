@@ -1,0 +1,41 @@
+@use "styles/mixin" as *;
+
+.block {
+  margin: 110px 0 50px;
+
+  @include medium {
+    margin: 150px 0 50px;
+  }
+
+  .imagesList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    @include small {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include medium {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .imageBlock {
+      height: 300px;
+      flex-grow: 1;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+    }
+  }
+}

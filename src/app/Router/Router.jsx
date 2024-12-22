@@ -7,6 +7,7 @@ import {
   MotoDetailPage,
   NotFound,
   OurMotorbikes,
+  PlacesInKG,
   TourDetailPage,
   Tours,
 } from "pages/index";
@@ -39,6 +40,10 @@ export const Router = createBrowserRouter([
       {
         path: PATHS.motoDetail,
         element: <MotoDetailPage />,
+      },
+      {
+        path: PATHS.placesInKG,
+        element: <PlacesInKG />,
       },
       {
         path: PATHS.notFound,

@@ -1,6 +1,6 @@
 import { AboutUsBlock, Contact, Main, Slider } from "modules/index";
 import { Container, Heading, MotoCard, ToursCard } from "ui/index";
-import { MotoList, ToursList } from "utils/Constants/Constants";
+import { MotoList, PATHS, ToursList } from "utils/Constants/Constants";
 
 export const Home = () => {
   return (
@@ -8,10 +8,10 @@ export const Home = () => {
       <Main />
       <Container>
         <AboutUsBlock />
-        <Heading withBtn="/about-us">Our Motorbikes</Heading>
-        <Slider list={MotoList} Card={MotoCard} />
-        <Heading withBtn="/about-us">Tours</Heading>
-        <Slider list={ToursList} Card={ToursCard} />
+        <Heading withBtn={PATHS.ourMotorbikes}>Our Motorbikes</Heading>
+        <Slider list={MotoList.slice(0, 6)} Card={MotoCard} />
+        <Heading withBtn={PATHS.tours}>Tours</Heading>
+        <Slider list={ToursList.slice(0, 6)} Card={ToursCard} />
         <Contact />
       </Container>
     </div>

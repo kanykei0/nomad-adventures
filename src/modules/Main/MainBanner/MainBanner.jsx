@@ -8,7 +8,7 @@ const MainBanner = () => {
         <Container>
           <div className={classes.text}>
             <Typography variant="h1" weight="bold" color="white">
-              Explore the Rugged Kyrgyz Landscapes on Motorbike
+              Explore the Kyrgyz Landscapes
             </Typography>
             <Typography
               variant="h4"
@@ -17,7 +17,7 @@ const MainBanner = () => {
               className={classes.desc}
             >
               Experience the thrill of riding through the breathtaking mountains
-              and valleys of Kyrgyzstan on our powerful motorbikes
+              and valleys of Kyrgyzstan on our motorbikes
             </Typography>
             <Button text="Contact" size="medium" />
           </div>

@@ -5,11 +5,6 @@ import {
   WhatsappIcon,
 } from "assets/icons";
 
-import MotoImg from "assets/images/ImageItem.png";
-import MotoImg1 from "assets/images/MotoItem1.jpg";
-import MotoImg2 from "assets/images/manOnBike.jpg";
-import MotoImg3 from "assets/images/mainbanner.jpg";
-
 import toursImg from "assets/images/toursImg.png";
 import toursImg1 from "assets/images/kelsuu.jpg";
 import toursImg2 from "assets/images/horses.jpg";
@@ -19,6 +14,34 @@ import motoIcon from "assets/images/motoIcon.png";
 import MotoPart from "assets/images/motoPartIcon.webp";
 import toursIcon from "assets/images/toursIcon.png";
 import guideIcon from "assets/images/guideIcon.jpg";
+
+import motoMore1 from "assets/motoImages/redCRF1.jpg";
+import motoMore2 from "assets/motoImages/redCRF2.jpg";
+
+import motoMoreWhite1 from "assets/motoImages/whiteCRF1.jpg";
+import motoMoreWhite2 from "assets/motoImages/whiteCRF.jpg";
+import motoMoreWhite3 from "assets/motoImages/whiteCRF2.jpg";
+
+import hondaXR1 from "assets/motoImages/hondaXR1.jpeg";
+import hondaXR2 from "assets/motoImages/hondaXR2.jpeg";
+
+import hondaXRred1 from "assets/motoImages/hondaXRred1.jpg";
+import hondaXRred2 from "assets/motoImages/hondaXRred2.jpeg";
+import hondaXRred3 from "assets/motoImages/hondaXRred3.jpeg";
+
+import tranaslp1 from "assets/motoImages/Transalp1.jpg";
+import tranaslp2 from "assets/motoImages/Transalp2.jpg";
+import tranaslp3 from "assets/motoImages/Transalp3.jpg";
+import tranaslp4 from "assets/motoImages/Transalp4.jpg";
+
+import hondaXrRainbow1 from "assets/motoImages/hondaXRrainbow1.jpeg";
+import hondaXrRainbow2 from "assets/motoImages/hondaXRrainbow2.jpeg";
+
+import goose1 from "assets/motoImages/goose1.jpeg";
+import goose2 from "assets/motoImages/goose2.jpeg";
+import goose3 from "assets/motoImages/goose3.jpeg";
+import goose4 from "assets/motoImages/goose4.jpeg";
+import goose5 from "assets/motoImages/goose5.jpeg";
 
 export const PATHS = {
   home: "/",
@@ -46,195 +69,182 @@ export const SocialMediaLinks = [
 ];
 
 export const AboutServicesList = [
-  { icon: motoIcon, title: "Moto rent", desc: "Rent simply and quickly" },
+  { icon: motoIcon, title: "Moto Rent", desc: "Quick and easy rentals" },
+  {
+    icon: toursIcon,
+    title: "Tours",
+    desc: "Unique routes tailored to your adventure",
+  },
+  {
+    icon: guideIcon,
+    title: "Guide Support",
+    desc: "Expert guidance for a safe and enjoyable trip",
+  },
   {
     icon: MotoPart,
-    title: "Guarantee",
-    desc: "Guarantee of motorcycle reliability",
-  },
-  { icon: toursIcon, title: "Tours", desc: "Routes for any type of tour" },
-  { icon: guideIcon, title: "Guide", desc: "Support for safe travel" },
-];
-
-export const ContactBlock = [
-  {
-    icon: <WhatsappIcon color="#232323" />,
-    data: [
-      { link: "", name: "+996 776 849 662" },
-      { link: "", name: "+996 555 989 477" },
-    ],
-  },
-  {
-    icon: <InstagramIcon color="#232323" />,
-    data: [{ link: "", name: "@nomad_adventures_888" }],
-  },
-  {
-    icon: <TelegramIcon color="#232323" />,
-    data: [{ link: "", name: "@nomad_adventures" }],
+    title: "Reliability Guarantee",
+    desc: "Trustworthy bikes for every road",
   },
 ];
 
 export const MotoList = [
   {
     id: "0",
-    title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3, MotoImg, MotoImg1],
-    year: "2023",
+    title: "Honda CRF 250 L",
+    images: [motoMore1, motoMore2],
+    year: "2016",
     type: "Single-cylinder",
-    make: "BMW",
-    cost_1: "100",
-    cost_2: "80",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda CRF250L is a reliable and versatile enduro motorcycle, perfect for both city rides and off-road adventures. Equipped with a 250cc engine with smooth power delivery, durable suspension, and easy handling, it’s a bike that suits a wide range of riders. Its versatility makes it an excellent choice for beginners and experienced riders alike, as well as for jeep tours or independent routes.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Seat height", value: "875mm" },
+      { name: "Weight", value: "143 kg" },
+
       { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
       { name: "Cooling", value: "Liquid" },
       { name: "Transmission", value: "6-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "3.00 x 21" },
+      { name: "Rear tire", value: "120/80 x 18" },
     ],
   },
   {
     id: "1",
-    title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3, MotoImg, MotoImg1],
-    year: "2017",
-    type: "Travel",
-    make: "YAMAHA",
+    title: "Honda CRF 250 L",
+    images: [motoMoreWhite1, motoMoreWhite3, motoMoreWhite2],
+    year: "2016",
+    type: "Single-cylinder",
+    make: "Honda",
     cost_1: "80",
-    cost_2: "60",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda CRF250L is a reliable and versatile enduro motorcycle, perfect for both city rides and off-road adventures. Equipped with a 250cc engine with smooth power delivery, durable suspension, and easy handling, it’s a bike that suits a wide range of riders. Its versatility makes it an excellent choice for beginners and experienced riders alike, as well as for jeep tours or independent routes.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Seat height", value: "875mm" },
+      { name: "Weight", value: "143 kg" },
+
       { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
       { name: "Cooling", value: "Liquid" },
       { name: "Transmission", value: "6-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "3.00 x 21" },
+      { name: "Rear tire", value: "120/80 x 18" },
     ],
   },
   {
     id: "2",
-    title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1],
-    year: "2023",
-    type: "Sports",
-    make: "BMW",
-    cost_1: "100",
-    cost_2: "80",
+    title: "Honda XR 250",
+    images: [hondaXR1, hondaXR2],
+    year: "-",
+    type: "Single-cylinder",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Seat height", value: "875mm" },
+      { name: "Weight", value: "133 kg" },
+
       { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
-      { name: "Cooling", value: "Liquid" },
-      { name: "Transmission", value: "6-speed" },
+      { name: "Cooling", value: "Air-cooled" },
+      { name: "Transmission", value: "5-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "3.00 x 21" },
+      { name: "Rear tire", value: "120/80 x 18" },
     ],
   },
   {
     id: "3",
-    title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
-    year: "2017",
-    type: "Travel",
-    make: "YAMAHA",
+    title: "Honda XR 250",
+    images: [hondaXRred1, hondaXRred2, hondaXRred3],
+    year: "-",
+    type: "Single-cylinder",
+    make: "Honda",
     cost_1: "80",
-    cost_2: "60",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Seat height", value: "875mm" },
+      { name: "Weight", value: "133 kg" },
+
       { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
-      { name: "Cooling", value: "Liquid" },
-      { name: "Transmission", value: "6-speed" },
+      { name: "Cooling", value: "Air-cooled" },
+      { name: "Transmission", value: "5-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "3.00 x 21" },
+      { name: "Rear tire", value: "120/80 x 18" },
     ],
   },
   {
     id: "4",
-    title: "BMW S1000 RX",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
-    year: "2023",
-    type: "Sports",
-    make: "BMW",
-    cost_1: "100",
-    cost_2: "80",
+    title: "Honda XR 250",
+    images: [hondaXrRainbow1, hondaXrRainbow2],
+    year: "-",
+    type: "Single-cylinder",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
+      { name: "Seat height", value: "875mm" },
+      { name: "Weight", value: "133 kg" },
+
       { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
-      { name: "Cooling", value: "Liquid" },
-      { name: "Transmission", value: "6-speed" },
+      { name: "Cooling", value: "Air-cooled" },
+      { name: "Transmission", value: "5-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "3.00 x 21" },
+      { name: "Rear tire", value: "120/80 x 18" },
     ],
   },
   {
     id: "5",
-    title: "YAMAHA XT",
-    images: [MotoImg, MotoImg1, MotoImg2, MotoImg3],
-    year: "2017",
-    type: "Travel",
-    make: "YAMAHA",
+    title: "Honda Transalp XL600V",
+    images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
+    year: "-",
+    type: "V-Twin-cylinder",
+    make: "Honda",
     cost_1: "80",
-    cost_2: "60",
+    cost_2: "70",
     description:
-      "Is a powerful sport-touring motorbike that combines the dynamics of a sports bike with the comfort of a touring bike. Powered by a 999cc engine, it develops around 165bhp for impressive acceleration and a high top speed. The motorbike is stable at high speeds and manoeuvrable, making it suitable for both long journeys and sporty rides.",
+      "Honda Transalp XL600V is a classic touring enduro designed for long-distance rides and comfortable journeys on any road. Equipped with a reliable 583cc V-twin engine, it ensures smooth and stable performance. Its thoughtful ergonomics, high seating position, and excellent suspension make it the perfect choice for both highway travel and off-road adventures. A reliable companion for exploration and extended routes.",
     characteristics: [
-      { name: "Seat height", value: "850mm / Weight: 180 kg" },
-      { name: "Displacement", value: "250cc" },
-      { name: "Bore and stroke", value: "76 x 55 mm" },
-      { name: "Compression ratio", value: "10.7:1" },
-      { name: "Valvetrain", value: "DOHC, four valves" },
-      { name: "Fueling", value: "EFI w/38mm throttle body" },
+      { name: "Seat height", value: "850mm" },
+      { name: "Weight", value: "194 kg" },
+      { name: "Displacement", value: "600cc" },
       { name: "Cooling", value: "Liquid" },
-      { name: "Transmission", value: "6-speed" },
+      { name: "Transmission", value: "5-speed" },
       { name: "Final drive", value: "520 chain" },
-      { name: "Front tire", value: "3.00 x 21; IRC Trails GP-21F" },
-      { name: "Rear tire", value: "120/80 x 18; IRC Trails GP-22R" },
-      { name: "Front brake", value: "256mm disc w/ twin-piston caliper" },
-      { name: "Rear brake", value: "220mm disc" },
+      { name: "Front tire", value: "90/90 x 21" },
+      { name: "Rear tire", value: "120/90 x 17" },
+    ],
+  },
+  {
+    id: "6",
+    title: "Minsk Goose 400",
+    images: [goose1, goose2, goose3, goose4, goose5],
+    year: "-",
+    type: "Single-cylinder",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "70",
+    description:
+      "Minsk Goose 400 is a modern off-road motorcycle with an aggressive design and outstanding technical capabilities. It features a 400cc single-cylinder liquid-cooled engine that provides excellent traction on any surface. With its energy-efficient suspension, robust frame, and high ground clearance, it is the ideal choice for off-road adventures.",
+    characteristics: [
+      { name: "Seat height", value: "845mm" },
+      { name: "Weight", value: "160 kg" },
+      { name: "Displacement", value: "400cc" },
+      { name: "Cooling", value: "Air-oil" },
+      { name: "Transmission", value: "5-speed" },
+      { name: "Final drive", value: "520 chain" },
+      { name: "Front tire", value: "100/90 x 19" },
+      { name: "Rear tire", value: "130/80 x 17" },
     ],
   },
 ];

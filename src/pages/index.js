@@ -4,4 +4,5 @@ export { Tours } from "./Tours/Tours";
 export { TourDetailPage } from "./TourDetailPage/TourDetailPage";
 export { OurMotorbikes } from "./OurMotorbikes/OurMotorbikes";
 export { MotoDetailPage } from "./MotoDetailPage/MotoDetailPage";
+export { PlacesInKG } from "./PlacesInKG/PlacesInKG";
 export { NotFound } from "./NotFound/NotFound";

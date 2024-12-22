@@ -19,20 +19,20 @@ export const AboutUsBlock = () => {
           color="primary"
           className={classes.lilTitle}
         >
-          Taking rides to a never level
+          Unleash the Adventure
         </Typography>
         <Typography variant="head" className={classes.title}>
-          great perfomance matters in future
+          Discover nature, freedom, and thrill like never before!
         </Typography>
         <div className={classes.imageInvise}>
           <img src={manBike} alt="bike" />
         </div>
         <Typography className={classes.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id beatae
-          pariatur eligendi sequi, facilis quod! Sit soluta saepe sunt laborum
-          esse sint labore assumenda aliquid rerum, obcaecati dolore
-          exercitationem hic facere beatae neque facilis dolor tenetur
-          consequatur est.
+          Explore the beauty of Kyrgyzstan with our reliable motorcycle rental
+          services. Ride through majestic mountains, serene valleys, and
+          shimmering lakes. Whether you{"'"}re looking for a quick rental,
+          guided tours, or custom routes, we provide everything you need for an
+          unforgettable journey.
         </Typography>
         <div className={classes.services}>
           {AboutServicesList.map((item, key) => (

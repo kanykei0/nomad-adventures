@@ -4,7 +4,7 @@
   border: 1px solid var(--color-opGray);
   padding-bottom: 10px;
   border-radius: 8px;
-  max-width: 270px;
+  width: 270px;
 
   .card_img {
     width: 100%;
@@ -21,42 +21,11 @@
   }
 
   .info_motoList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     border-bottom: 1px solid var(--color-opGray);
     padding: 15px 0;
 
-    .info_motoItem {
+    .motoTitle {
       text-align: center;
-      .info_motoItem_info {
-        color: var(--color-opBlack);
-      }
-    }
-
-    .separator {
-      position: relative;
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 0;
-        width: 1px;
-        height: 30px;
-        background-color: var(--color-opGray);
-      }
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 5px;
-        right: 0;
-        width: 1px;
-        height: 30px;
-        background-color: var(--color-opGray);
-      }
     }
   }
 

@@ -57,16 +57,20 @@
       max-width: 580px;
       flex: 1;
     }
+
     .lilTitle {
       text-transform: uppercase;
     }
+
     .title {
       text-transform: uppercase;
       margin: 10px 0 20px;
     }
+
     .desc {
       margin-top: 20px;
     }
+
     .services {
       margin-top: 40px;
       display: flex;
@@ -81,6 +85,8 @@
       }
       @include medium {
         justify-content: start;
+        margin-top: 0px;
+        gap: 10px;
       }
     }
   }
