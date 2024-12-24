@@ -2,8 +2,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import classes from "./TourDetailPage.module.scss";
 import { Container, ToursCard, Typography } from "ui/index";
 import { ArrowIcon, LocationIcon } from "assets/icons";
-import { ToursList } from "utils/Constants/Constants";
 import { PhotoSlider, Slider } from "modules/index";
+import { ToursList } from "utils/Constants/ToursDataConstant";
 
 export const TourDetailPage = () => {
   const { id } = useParams();

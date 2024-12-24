@@ -5,8 +5,10 @@ import { MotoCard, Typography } from "ui/index";
 import { Characteristics } from "./components/Characteristics";
 import { PhotoSlider, Slider } from "..";
 import { ArrowIcon } from "assets/icons";
+import { useTranslation } from "react-i18next";
 
 export const MotoDetail = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { id } = useParams();
   const motoData = MotoList[id];
@@ -26,20 +28,24 @@ export const MotoDetail = () => {
             {motoData.title}
           </Typography>
           <Typography weight="regular" className={classes.description_text}>
-            {motoData.description}
+            {t(motoData.description)}
           </Typography>
           <table className={classes.info_rent}>
             <tbody>
               <tr>
-                <td className={classes.info_rent_days}>1 to 9 days</td>
+                <td className={classes.info_rent_days}>
+                  {t("motoMore.dayLess")}
+                </td>
                 <td className={classes.info_rent_cost}>
-                  ${motoData.cost_1} day
+                  ${motoData.cost_1} {t("motoMore.day")}
                 </td>
               </tr>
               <tr>
-                <td className={classes.info_rent_days}>More than 10 days</td>
+                <td className={classes.info_rent_days}>
+                  {t("motoMore.dayMore")}
+                </td>
                 <td className={classes.info_rent_cost}>
-                  ${motoData.cost_2} day
+                  ${motoData.cost_2} {t("motoMore.day")}
                 </td>
               </tr>
             </tbody>

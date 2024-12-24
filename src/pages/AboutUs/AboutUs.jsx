@@ -10,7 +10,7 @@ export const AboutUs = () => {
         <Heading>About Us</Heading>
         <div className={classes.wrapper}>
           <div className={classes.textBlock}>
-            <Typography>
+            <Typography weight="regular">
               Мы — команда энтузиастов, предлагающая прокат мотоциклов и
               организованные мототуры по Кыргызстану для всех, кто мечтает
               покорить горные вершины и почувствовать дух свободы на двух
@@ -23,35 +23,35 @@ export const AboutUs = () => {
             </Typography>
             <ol className={classes.olList}>
               <li>
-                <Typography>Парк мотоциклов</Typography>
+                <Typography weight="regular">Парк мотоциклов</Typography>
               </li>
-              <Typography className={classes.olList_desc}>
+              <Typography weight="regular" className={classes.olList_desc}>
                 Мы предоставляем современные и надежные мотоциклы для различных
                 уровней подготовки: от новичков до опытных райдеров. Наши байки
                 проходят регулярное обслуживание, чтобы вы могли сосредоточиться
                 только на дороге и приключении.
               </Typography>
               <li>
-                <Typography>Уникальные маршруты</Typography>
+                <Typography weight="regular">Уникальные маршруты</Typography>
               </li>
-              <Typography className={classes.olList_desc}>
+              <Typography weight="regular" className={classes.olList_desc}>
                 Каждый маршрут — это тщательно разработанный путь через
                 захватывающие ландшафты Тянь-Шаня, бескрайние степи и уединенные
                 горные озера. Вас ждут как спокойные прогулки, так и
                 экстремальные эндуро-туров по дикой природе.
               </Typography>
               <li>
-                <Typography>Гиды и сопровождение</Typography>
+                <Typography weight="regular">Гиды и сопровождение</Typography>
               </li>
-              <Typography className={classes.olList_desc}>
+              <Typography weight="regular" className={classes.olList_desc}>
                 Опытные гиды, которые знают каждую тропу и перевал Кыргызстана,
                 обеспечат ваше путешествие безопасным и незабываемым. Мы говорим
                 на нескольких языках и всегда готовы помочь с любыми вопросами.
               </Typography>
               <li>
-                <Typography>Гибкие условия</Typography>
+                <Typography weight="regular">Гибкие условия</Typography>
               </li>
-              <Typography className={classes.olList_desc}>
+              <Typography weight="regular" className={classes.olList_desc}>
                 У нас можно арендовать мотоцикл для самостоятельного путешествия
                 или выбрать готовый тур, где все организовано: от маршрута и
                 питания до проживания и технической поддержки.

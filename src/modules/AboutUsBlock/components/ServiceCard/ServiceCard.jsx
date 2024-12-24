@@ -1,7 +1,10 @@
 import { Typography } from "ui/index";
 import classes from "./ServiceCard.module.scss";
+import { useTranslation } from "react-i18next";
 
 export const ServiceCard = ({ item }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={classes.service}>
       <div className={classes.img}>
@@ -9,9 +12,9 @@ export const ServiceCard = ({ item }) => {
       </div>
       <div className={classes.info}>
         <Typography weight="medium" color="primary" variant="h4">
-          {item.title}
+          {t(item.title)}
         </Typography>
-        <Typography>{item.desc}</Typography>
+        <Typography>{t(item.desc)}</Typography>
       </div>
     </div>
   );

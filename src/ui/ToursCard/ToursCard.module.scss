@@ -1,8 +1,14 @@
+@use "styles/mixin" as *;
+
 .card {
   border: 1px solid var(--color-opGray);
   padding-bottom: 10px;
   border-radius: 8px;
-  max-width: 270px;
+  width: 250px;
+
+  @include large {
+    width: 270px;
+  }
 
   .card_img {
     width: 100%;

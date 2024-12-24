@@ -3,7 +3,7 @@ import classes from "./ToursCard.module.scss";
 import { Typography } from "..";
 
 export const ToursCard = ({ items }) => {
-  const { id, title, description, images, routes } = items;
+  const { id, title, description, images } = items;
 
   return (
     <div className={classes.card}>
@@ -18,7 +18,7 @@ export const ToursCard = ({ items }) => {
           <Typography className={classes.desc} variant="body">
             {description}
           </Typography>
-          <div className={classes.type}>
+          {/* <div className={classes.type}>
             <Typography color="gray">Type:</Typography>
             <Typography className={classes.type_text}>
               {routes.map((item, index) => (
@@ -28,7 +28,7 @@ export const ToursCard = ({ items }) => {
                 </span>
               ))}
             </Typography>
-          </div>
+          </div> */}
         </div>
       </Link>
     </div>

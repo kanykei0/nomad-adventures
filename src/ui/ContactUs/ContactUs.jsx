@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { Typography } from "..";
 import classes from "./ContactUs.module.scss";
 import { InstagramIcon, TelegramIcon, WhatsappIcon } from "assets/icons";
 import { MailIcon } from "assets/icons/MailIcon";
 
 export const ContactUs = ({ bgWhite }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={`${bgWhite ? classes.bgWhite : classes.info}`}>
       {bgWhite && (
         <Typography variant="h2" color="primary" weight="bold">
-          Learn more about kyrgyzstan by choosing the right path for travel
+          {t("contact.text")}
         </Typography>
       )}
       <div className={classes.contact}>
@@ -17,7 +20,7 @@ export const ContactUs = ({ bgWhite }) => {
           variant="h3"
           weight="regular"
         >
-          Contact us
+          {t("banner.contact")}
         </Typography>
 
         <div className={`${classes.contact_card} ${classes.contact_wrap}`}>

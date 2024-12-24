@@ -7,7 +7,7 @@ export const Slider = ({
   list,
   Card,
   children,
-  minCardWidth = 246,
+  minCardWidth = 270,
   maxCards = 4.2,
 }) => {
   const [slidesPerView, setSlidesPerView] = useState(maxCards);

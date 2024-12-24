@@ -8,10 +8,13 @@ import photo2 from "assets/kyrgyzstanImages/photo2.jpg";
 import photo3 from "assets/kyrgyzstanImages/photo3.jpg";
 import photo4 from "assets/kyrgyzstanImages/photo4.jpg";
 import photo5 from "assets/kyrgyzstanImages/photo5.jpg";
+import { useTranslation } from "react-i18next";
 
 const images = [photo1, photo2, photo3, photo4, photo5];
 
 export const PlacesInKG = () => {
+  const { t } = useTranslation();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isScreenSmall, setIsScreenSmall] = useState(false);
@@ -39,7 +42,7 @@ export const PlacesInKG = () => {
   return (
     <Container>
       <div className={classes.block}>
-        <Heading>Places in Kyrgyzstan</Heading>
+        <Heading>{t("nav.placesInKG")}</Heading>
         <div className={classes.imagesList}>
           {images.map((path, index) => (
             <div

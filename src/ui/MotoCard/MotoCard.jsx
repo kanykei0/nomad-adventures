@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { Typography } from "..";
 import classes from "./MotoCard.module.scss";
+import { useTranslation } from "react-i18next";
 
 export const MotoCard = ({ items }) => {
+  const { t } = useTranslation();
   const { id, title, images, cost_1, cost_2 } = items;
 
   return (
@@ -24,18 +26,22 @@ export const MotoCard = ({ items }) => {
           <tbody>
             <tr>
               <td className={classes.info_rent_days}>
-                <Typography>1 to 9 days</Typography>
+                <Typography>{t("motoMore.dayLess")}</Typography>
               </td>
               <td className={classes.info_rent_cost}>
-                <Typography>${cost_1} day</Typography>
+                <Typography>
+                  ${cost_1} {t("motoMore.day")}
+                </Typography>
               </td>
             </tr>
             <tr>
               <td className={classes.info_rent_days}>
-                <Typography>More than 10 days</Typography>
+                <Typography>{t("motoMore.dayMore")}</Typography>
               </td>
               <td className={classes.info_rent_cost}>
-                <Typography>${cost_2} day</Typography>
+                <Typography>
+                  ${cost_2} {t("motoMore.day")}
+                </Typography>
               </td>
             </tr>
           </tbody>

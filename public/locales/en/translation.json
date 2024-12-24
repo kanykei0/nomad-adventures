@@ -10,7 +10,66 @@
     "placesInKG": "Places in Kyrgyzstan"
   },
 
-  "homePage": {
-    "hello": "Hello World"
+  "banner": {
+    "title1": "Freedom on Wheels - Discover Kyrgyzstan",
+    "title": "Motorcycle rentals and tours",
+    "desc": "Experience the thrill of riding through the breathtaking mountains and valleys of Kyrgyzstan on our motorbikes",
+    "contact": "Contact us"
+  },
+
+  "aboutBlock": {
+    "title1": "Unleash the Adventure",
+    "title2": "Discover nature, freedom, and thrill like never before!",
+    "desc": "Explore the beauty of Kyrgyzstan with our reliable motorcycle rental services. Whether you're looking for a quick rental, guided tours, or custom routes, we provide everything you need for an unforgettable journey.",
+    "rent": "Moto Rent",
+    "rentDesc": "Quick and easy rentals",
+    "tours": "Tours",
+    "toursDesc": "Unique routes tailored to your adventure",
+    "guide": "Guide Support",
+    "guideDesc": "Expert guidance for a safe and enjoyable trip",
+    "garant": "Reliability Guarantee",
+    "garantDesc": "Trustworthy bikes for every road"
+  },
+  "seeMore": "See more",
+  "contact": {
+    "text": "Learn more about kyrgyzstan by choosing the right path for travel"
+  },
+  "motoMore": {
+    "charac": "Characteristics",
+    "type": "Type",
+    "height": "Seat height",
+    "weight": "Weight",
+    "displace": "Displacement",
+    "cooling": "Cooling",
+    "transmission": "Transmission",
+    "drive": "Final drive",
+    "front": "Front tire",
+    "rear": "Rear tire",
+    "dayLess": "1 to 9 days",
+    "dayMore": "More than 10 days",
+    "day": "day"
+  },
+  "motorbikes": {
+    "id0": {
+      "desc": "Honda CRF250L is a reliable and versatile enduro motorcycle, perfect for both city rides and off-road adventures. Equipped with a 250cc engine with smooth power delivery, durable suspension, and easy handling, it’s a bike that suits a wide range of riders. Its versatility makes it an excellent choice for beginners and experienced riders alike, as well as for jeep tours or independent routes."
+    },
+    "id1": {
+      "desc": "Honda CRF250L is a reliable and versatile enduro motorcycle, perfect for both city rides and off-road adventures. Equipped with a 250cc engine with smooth power delivery, durable suspension, and easy handling, it’s a bike that suits a wide range of riders. Its versatility makes it an excellent choice for beginners and experienced riders alike, as well as for jeep tours or independent routes."
+    },
+    "id2": {
+      "desc": "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions."
+    },
+    "id3": {
+      "desc": "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions."
+    },
+    "id4": {
+      "desc": "Honda XR250 is a legendary enduro motorcycle that combines power, reliability, and excellent off-road performance. Equipped with a 250cc engine, lightweight frame, and highly efficient suspension, it is perfect for challenging routes. An excellent choice for adventure enthusiasts and professionals who value agility and comfort in any conditions."
+    },
+    "id5": {
+      "desc": "Honda Transalp XL600V is a classic touring enduro designed for long-distance rides and comfortable journeys on any road. Equipped with a reliable 583cc V-twin engine, it ensures smooth and stable performance. Its thoughtful ergonomics, high seating position, and excellent suspension make it the perfect choice for both highway travel and off-road adventures. A reliable companion for exploration and extended routes."
+    },
+    "id6": {
+      "desc": "Minsk Goose 400 is a modern off-road motorcycle with an aggressive design and outstanding technical capabilities. It features a 400cc single-cylinder liquid-cooled engine that provides excellent traction on any surface. With its energy-efficient suspension, robust frame, and high ground clearance, it is the ideal choice for off-road adventures."
+    }
   }
 }

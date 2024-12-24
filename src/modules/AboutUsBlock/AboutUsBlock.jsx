@@ -5,8 +5,11 @@ import { AboutServicesList } from "utils/Constants/Constants";
 import { ServiceCard } from "./components/ServiceCard/ServiceCard";
 import horses from "assets/images/horses.jpg";
 import kelsuu from "assets/images/kelsuu.jpg";
+import { useTranslation } from "react-i18next";
 
 export const AboutUsBlock = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={classes.block}>
       <div className={classes.image}>
@@ -19,21 +22,15 @@ export const AboutUsBlock = () => {
           color="primary"
           className={classes.lilTitle}
         >
-          Unleash the Adventure
+          {t("aboutBlock.title1")}
         </Typography>
         <Typography variant="head" className={classes.title}>
-          Discover nature, freedom, and thrill like never before!
+          {t("aboutBlock.title2")}
         </Typography>
         <div className={classes.imageInvise}>
           <img src={manBike} alt="bike" />
         </div>
-        <Typography className={classes.desc}>
-          Explore the beauty of Kyrgyzstan with our reliable motorcycle rental
-          services. Ride through majestic mountains, serene valleys, and
-          shimmering lakes. Whether you{"'"}re looking for a quick rental,
-          guided tours, or custom routes, we provide everything you need for an
-          unforgettable journey.
-        </Typography>
+        <Typography className={classes.desc}>{t("aboutBlock.desc")}</Typography>
         <div className={classes.services}>
           {AboutServicesList.map((item, key) => (
             <ServiceCard key={key} item={item} />
