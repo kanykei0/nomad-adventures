@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { Typography } from "..";
 import classes from "./ContactUs.module.scss";
-import { InstagramIcon, TelegramIcon, WhatsappIcon } from "assets/icons";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TelegramIcon,
+  WhatsappIcon,
+} from "assets/icons";
 import { MailIcon } from "assets/icons/MailIcon";
 
 export const ContactUs = ({ bgWhite }) => {
@@ -63,10 +68,29 @@ export const ContactUs = ({ bgWhite }) => {
             <TelegramIcon color="#232323" />
           </div>
           <div className={classes.contact_card_info}>
-            <a href="#" target="_blank" className={classes.link}>
+            <a
+              href="https://t.me/extreme_888"
+              target="_blank"
+              className={classes.link}
+            >
               <Typography className={classes.link_text}>
-                @nomad_adventures
+                @extreme_888
               </Typography>
+            </a>
+          </div>
+        </div>
+
+        <div className={classes.contact_card}>
+          <div className={classes.contact_card_icon_last}>
+            <FacebookIcon color="#232323" size="34" />
+          </div>
+          <div className={classes.contact_card_info}>
+            <a
+              href="https://www.facebook.com/share/1B25G5r75f/"
+              target="_blank"
+              className={classes.link}
+            >
+              <Typography className={classes.link_text}>Enduro Trip</Typography>
             </a>
           </div>
         </div>
@@ -76,7 +100,11 @@ export const ContactUs = ({ bgWhite }) => {
             <MailIcon />
           </div>
           <div className={classes.contact_card_info}>
-            <a href="#" target="_blank" className={classes.link}>
+            <a
+              href="mailto:nurs200567@gmail.com"
+              target="_blank"
+              className={classes.link}
+            >
               <Typography className={classes.link_text}>
                 nurs200567@gmail.com
               </Typography>

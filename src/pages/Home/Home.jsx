@@ -18,7 +18,9 @@ export const Home = () => {
         <Slider list={MotoList.slice(0, 6)} Card={MotoCard} />
         <Heading withBtn={PATHS.tours}>{t("nav.tours")}</Heading>
         <Slider list={ToursList.slice(0, 6)} Card={ToursCard} />
-        <Contact />
+        <div id="contact-section">
+          <Contact />
+        </div>
       </Container>
     </div>
   );

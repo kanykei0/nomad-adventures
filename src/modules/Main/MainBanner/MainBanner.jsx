@@ -5,6 +5,12 @@ import { useTranslation } from "react-i18next";
 const MainBanner = () => {
   const { t } = useTranslation();
 
+  const scrollToContact = () => {
+    document
+      .getElementById("contact-section")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className={classes.block}>
       <div className={classes.imgBlock}>
@@ -25,7 +31,11 @@ const MainBanner = () => {
               >
                 {t("banner.desc")}
               </Typography>
-              <Button text={t("banner.contact")} size="medium" />
+              <Button
+                onClick={scrollToContact}
+                text={t("banner.contact")}
+                size="medium"
+              />
             </div>
           </div>
         </Container>

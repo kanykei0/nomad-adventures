@@ -56,10 +56,16 @@ export const NavigationData = [
 ];
 
 export const SocialMediaLinks = [
-  { icon: <InstagramIcon />, link: "" },
-  { icon: <FacebookIcon />, link: "" },
-  { icon: <TelegramIcon />, link: "" },
-  { icon: <WhatsappIcon />, link: "" },
+  {
+    icon: <InstagramIcon />,
+    link: "https://www.instagram.com/extreme_888?utm_source=qr&igsh=dm91c3l1bmYxMXJn",
+  },
+  {
+    icon: <FacebookIcon />,
+    link: "https://www.facebook.com/share/1B25G5r75f/",
+  },
+  { icon: <TelegramIcon />, link: "https://t.me/extreme_888" },
+  { icon: <WhatsappIcon />, link: "https://wa.me/996559888041" },
 ];
 
 export const AboutServicesList = [

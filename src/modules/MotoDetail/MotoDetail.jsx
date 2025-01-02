@@ -17,8 +17,8 @@ export const MotoDetail = () => {
     <div className={classes.block}>
       <button onClick={() => navigate(-1)} className={classes.btn}>
         <ArrowIcon color="#232323" />
-        <Typography variant="h4" weight="medium">
-          Назад
+        <Typography variant="h4" weight="medium" className={classes.backBtn}>
+          {t("back")}
         </Typography>
       </button>
       <div className={classes.wrapper}>

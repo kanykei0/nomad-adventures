@@ -12,7 +12,7 @@ export const OurMotorbikes = () => {
         <Heading className={classes.title}>{t("nav.ourMotorbikes")}</Heading>
         <div className={classes.list}>
           {MotoList.map((item, key) => (
-            <MotoCard key={key} items={item} />
+            <MotoCard large key={key} items={item} />
           ))}
         </div>
       </div>

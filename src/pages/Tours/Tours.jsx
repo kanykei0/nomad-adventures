@@ -44,7 +44,7 @@ export const Tours = () => {
               ))} */}
 
           {ToursList.map((item, key) => (
-            <ToursCard key={key} items={item} />
+            <ToursCard large key={key} items={item} />
           ))}
         </div>
       </div>

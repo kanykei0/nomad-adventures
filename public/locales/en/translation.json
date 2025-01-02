@@ -30,10 +30,26 @@
     "garant": "Reliability Guarantee",
     "garantDesc": "Trustworthy bikes for every road"
   },
+
+  "aboutUs": {
+    "text1": "We are a team of enthusiasts offering motorcycle rentals and organized motorcycle tours across Kyrgyzstan for everyone dreaming of conquering mountain peaks and experiencing the spirit of freedom on two wheels. Our expertise and passion for adventure allow us to create routes that combine adrenaline, natural beauty, and true comfort.",
+    "text2": "Why Choose Us?",
+    "text3": "Motorcycle Fleet",
+    "text4": "We provide modern and reliable motorcycles suitable for all skill levels, from beginners to experienced riders. Our bikes undergo regular maintenance, ensuring you can focus entirely on the road and the adventure.",
+    "text5": "Unique Routes",
+    "text6": "Each route is a carefully designed journey through the breathtaking landscapes of the Tien Shan mountains, endless steppes, and secluded mountain lakes. Whether you’re looking for a relaxed ride or extreme enduro tours through the wilderness, we have the perfect experience for you.",
+    "text7": "Guides and Support",
+    "text8": "Our experienced guides, who know every trail and mountain pass in Kyrgyzstan, will ensure your journey is safe and unforgettable. We speak multiple languages and are always ready to assist with any questions you may have.",
+    "text9": "Flexible Options",
+    "text10": "You can rent a motorcycle for an independent adventure or choose a fully organized tour where everything is taken care of: from the route and meals to accommodation and technical support."
+  },
+
   "seeMore": "See more",
+  "back": "Back",
   "contact": {
     "text": "Learn more about kyrgyzstan by choosing the right path for travel"
   },
+
   "motoMore": {
     "charac": "Characteristics",
     "type": "Type",
@@ -49,6 +65,7 @@
     "dayMore": "More than 10 days",
     "day": "day"
   },
+
   "motorbikes": {
     "id0": {
       "desc": "Honda CRF250L is a reliable and versatile enduro motorcycle, perfect for both city rides and off-road adventures. Equipped with a 250cc engine with smooth power delivery, durable suspension, and easy handling, it’s a bike that suits a wide range of riders. Its versatility makes it an excellent choice for beginners and experienced riders alike, as well as for jeep tours or independent routes."
@@ -70,6 +87,24 @@
     },
     "id6": {
       "desc": "Minsk Goose 400 is a modern off-road motorcycle with an aggressive design and outstanding technical capabilities. It features a 400cc single-cylinder liquid-cooled engine that provides excellent traction on any surface. With its energy-efficient suspension, robust frame, and high ground clearance, it is the ideal choice for off-road adventures."
+    }
+  },
+
+  "tours": {
+    "id0": {
+      "title": "Son-Kul",
+      "shortDesc": "Moto tour to Lake Son-Kul Duration: 2-3 days Difficulty level: Medium Distance: ~600 km (round trip) Route description: A journey to Son-Kul, the pearl of the Kyrgyz mountains, is an unforgettable trip through picturesque mountain passes and pastures",
+      "desc": "Moto Tour to Lake Son-Kul\r\n\r\nDuration: 2-3 days\r\nDifficulty Level: Medium\r\nDistance: ~600 km (round trip)\r\n\r\nRoute Description:\r\nThe journey to Son-Kul, the pearl of the Kyrgyz mountains, is an unforgettable adventure through scenic valleys, winding roads, and steep serpentines. Starting from Bishkek, the route takes you through pristine valleys, winding roads, and challenging mountain passes. Along the way, you will encounter authentic yurts, meet nomads, and enjoy breathtaking views of the Tian Shan mountains.\r\n\r\nUpon arrival at the lake, you will find yourself at an altitude of 3016 meters, where panoramic views of endless expanses and the mirror-like surface of Son-Kul unfold before you. Here you can relax, enjoy the silence of nature, and truly experience the freedom of the Kyrgyz mountains.\r\n\r\nRoute Highlights:\r\n- Scenic mountain passes;\r\n- Overnight stay in a yurt by the lake;\r\n- Meeting local shepherds and tasting traditional dishes;\r\n- Riding across alpine meadows and wild pastures.\r\n\r\nPerfect for those who want to combine the thrill of motorcycling with an immersion into the wilderness and nomadic culture of Kyrgyzstan."
+    },
+    "id1": {
+      "title": "Issyk-Kul",
+      "shortDesc": "Duration: 5-6 days Difficulty Level: Medium Distance: ~1000 km Route Description: 1. Konorchek – The journey begins with mesmerizing red canyons where rocks resemble ancient castles and towers. 2. Kok-Moinok – A stop with stunning views of picturesque mountain valleys and passes.",
+      "desc": "Moto Tour «Around Lake Issyk-Kul»\r\n\r\nDuration: 5-6 days\r\nDifficulty Level: Medium\r\nDistance: ~1000 km\r\n\r\nRoute Description:\r\n\r\n1. Konorchek – The journey begins with mesmerizing red canyons where rocks resemble ancient castles and towers.\r\n\r\n2. Kok-Moinok – A stop with stunning views of picturesque mountain valleys and passes.\r\n\r\n3. Issyk-Kul Shore – Relax on the crystal-clear shores of Kyrgyzstan's pearl, with the opportunity to refresh yourself in the pristine waters of the lake.\r\n\r\n4. «Fairy Tale» Canyon – Amazing natural sculptures made of sandstone that resemble whimsical fairy-tale figures.\r\n\r\n5. Jeti-Oguz – A gorge with the legendary red rocks «Seven Bulls» and scenic meadows where you can enjoy natural beauty.\r\n\r\n6. Karakol – Cultural and historical stops:\r\n\r\n7. Altyn-Arashan – A trip to the gorge and relaxation in hot thermal pools amidst highland landscapes.\r\n\r\n8. Semenov Gorge – A picturesque gorge with green meadows, mountain rivers, and breathtaking panoramas.\r\n\r\n9. Cholpon-Ata – Visit the Petroglyph Museum, which preserves ancient rock carvings against the backdrop of mountain panoramas, and explore local attractions.\r\n\r\nTour Highlights:\r\n\r\n- Visits to natural wonders and cultural landmarks;\r\n- Opportunity to witness eagle hunting and learn about the traditions of Kyrgyz nomads;\r\n- Swimming in the clear waters of Issyk-Kul and relaxing in hot springs.\r\n\r\nThis route will give you a unique experience of traveling around Issyk-Kul, combining adventure, culture, and relaxation in nature!"
+    },
+    "id2": {
+      "title": "Kel-Suu",
+      "shortDesc": "Duration: 3-4 days Difficulty Level: Medium/High Distance: ~900 km (round trip)",
+      "desc": "Moto Tour to Lake Kel-Suu\r\n\r\nDuration: 3-4 days\r\nDifficulty Level: Medium/High\r\nDistance: ~900 km (round trip)\r\n\r\nRoute Description:\r\nA journey to Lake Kel-Suu—one of the most mysterious and beautiful places in Kyrgyzstan. The route starts from Bishkek and passes through picturesque valleys, rocky roads, and mountain passes. You will encounter stunning views, roaring rivers, and wild nature on the way to this high-altitude wonder.\r\n\r\nThe lake is located at an altitude of 3500 meters in the Kok-Kiya Gorge and is famous for its rugged shores and turquoise waters surrounded by sheer cliffs. Here, you can enjoy absolute silence, walk along the lake, and take breathtaking photos.\r\n\r\nRoute Highlights:\r\n\r\n- Crossing mountain passes and roads with adrenaline-pumping serpentines;\r\n- Overnight stays in yurts or tents in secluded spots near the lake;\r\n- Passing through the natural beauty of Naryn and At-Bashi;\r\n- Opportunity to see wildlife and rare animals.\r\n\r\nThis route is perfect for adventure enthusiasts who are ready for challenges and eager to visit one of the most remote and scenic places in Kyrgyzstan."
     }
   }
 }

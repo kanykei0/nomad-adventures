@@ -1,11 +1,11 @@
-export const FacebookIcon = ({ color = "#fff" }) => {
+export const FacebookIcon = ({ color = "#fff", size = "30" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width="30"
-      height="30"
+      width={size}
+      height={size}
       viewBox="0 0 30 30"
       fill={color}
     >

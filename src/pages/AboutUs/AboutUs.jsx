@@ -2,59 +2,45 @@ import { Container, Heading, Typography } from "ui/index";
 import classes from "./AboutUs.module.scss";
 import photo from "assets/images/aboutus.jpg";
 import photo1 from "assets/images/aboutus1.jpg";
+import { useTranslation } from "react-i18next";
 
 export const AboutUs = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <div className={classes.block}>
-        <Heading>About Us</Heading>
+        <Heading>{t("nav.aboutUs")}</Heading>
         <div className={classes.wrapper}>
           <div className={classes.textBlock}>
-            <Typography weight="regular">
-              Мы — команда энтузиастов, предлагающая прокат мотоциклов и
-              организованные мототуры по Кыргызстану для всех, кто мечтает
-              покорить горные вершины и почувствовать дух свободы на двух
-              колесах. Наш опыт и любовь к приключениям позволяют нам создавать
-              маршруты, которые сочетают в себе адреналин, красоту природы и
-              настоящий комфорт.
-            </Typography>
+            <Typography weight="regular">{t("aboutUs.text1")}</Typography>
             <Typography className={classes.chooseUs} weight="medium">
-              Почему выбирают нас?
+              {t("aboutUs.text2")}
             </Typography>
             <ol className={classes.olList}>
               <li>
-                <Typography weight="regular">Парк мотоциклов</Typography>
+                <Typography weight="regular">{t("aboutUs.text3")}</Typography>
               </li>
               <Typography weight="regular" className={classes.olList_desc}>
-                Мы предоставляем современные и надежные мотоциклы для различных
-                уровней подготовки: от новичков до опытных райдеров. Наши байки
-                проходят регулярное обслуживание, чтобы вы могли сосредоточиться
-                только на дороге и приключении.
+                {t("aboutUs.text4")}
               </Typography>
               <li>
-                <Typography weight="regular">Уникальные маршруты</Typography>
+                <Typography weight="regular">{t("aboutUs.text5")}</Typography>
               </li>
               <Typography weight="regular" className={classes.olList_desc}>
-                Каждый маршрут — это тщательно разработанный путь через
-                захватывающие ландшафты Тянь-Шаня, бескрайние степи и уединенные
-                горные озера. Вас ждут как спокойные прогулки, так и
-                экстремальные эндуро-туров по дикой природе.
+                {t("aboutUs.text6")}
               </Typography>
               <li>
-                <Typography weight="regular">Гиды и сопровождение</Typography>
+                <Typography weight="regular">{t("aboutUs.text7")}</Typography>
               </li>
               <Typography weight="regular" className={classes.olList_desc}>
-                Опытные гиды, которые знают каждую тропу и перевал Кыргызстана,
-                обеспечат ваше путешествие безопасным и незабываемым. Мы говорим
-                на нескольких языках и всегда готовы помочь с любыми вопросами.
+                {t("aboutUs.text8")}
               </Typography>
               <li>
-                <Typography weight="regular">Гибкие условия</Typography>
+                <Typography weight="regular">{t("aboutUs.text9")}</Typography>
               </li>
               <Typography weight="regular" className={classes.olList_desc}>
-                У нас можно арендовать мотоцикл для самостоятельного путешествия
-                или выбрать готовый тур, где все организовано: от маршрута и
-                питания до проживания и технической поддержки.
+                {t("aboutUs.text10")}
               </Typography>
             </ol>
           </div>

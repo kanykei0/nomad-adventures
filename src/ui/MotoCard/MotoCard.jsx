@@ -3,12 +3,12 @@ import { Typography } from "..";
 import classes from "./MotoCard.module.scss";
 import { useTranslation } from "react-i18next";
 
-export const MotoCard = ({ items }) => {
+export const MotoCard = ({ items, large }) => {
   const { t } = useTranslation();
   const { id, title, images, cost_1, cost_2 } = items;
 
   return (
-    <div className={classes.card}>
+    <div className={`${classes.card} ${large && classes.cardLarge}`}>
       <Link to={"/our-motorbikes/" + id}>
         <div className={classes.card_img}>
           <img src={images[0]} alt={title} />

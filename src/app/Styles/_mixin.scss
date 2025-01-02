@@ -1,3 +1,4 @@
+$extra-small-screen: 400px;
 $small-screen: 500px;
 $medium-screen: 850px;
 $large-screen: 1100px;
@@ -16,6 +17,12 @@ $large-screen: 1100px;
 
 @mixin small {
   @media (min-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin extraSmall {
+  @media (min-width: $extra-small-screen) {
     @content;
   }
 }

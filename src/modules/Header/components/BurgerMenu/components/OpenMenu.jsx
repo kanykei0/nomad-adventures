@@ -6,12 +6,12 @@ import Logo from "assets/images/logo.svg";
 import { CloseIcon } from "assets/icons/CloseIcon";
 import { Typography } from "ui/index";
 
-export const OpenMenu = ({ isClose, setIsClose }) => {
+export const OpenMenu = ({ isClose, setIsClose, menuRef }) => {
   const { t } = useTranslation();
 
   return (
     <div className={`${classes.backdrop} ${isClose && classes.menuClose}`}>
-      <div className={classes.nav}>
+      <div className={classes.nav} ref={menuRef}>
         <div className={classes.navTop}>
           <div className={classes.navTop_logo}>
             <Link to={PATHS.home} className={classes.logoBlock}>

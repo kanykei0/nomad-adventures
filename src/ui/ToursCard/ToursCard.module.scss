@@ -52,3 +52,15 @@
     }
   }
 }
+
+.cardLarge {
+  width: 100%;
+
+  @include small {
+    width: 250px;
+  }
+
+  @include large {
+    width: 270px;
+  }
+}

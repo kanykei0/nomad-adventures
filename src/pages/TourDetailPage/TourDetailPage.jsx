@@ -4,8 +4,10 @@ import { Container, ToursCard, Typography } from "ui/index";
 import { ArrowIcon, LocationIcon } from "assets/icons";
 import { PhotoSlider, Slider } from "modules/index";
 import { ToursList } from "utils/Constants/ToursDataConstant";
+import { useTranslation } from "react-i18next";
 
 export const TourDetailPage = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const navigate = useNavigate();
   const tourData = ToursList[id];
@@ -15,8 +17,8 @@ export const TourDetailPage = () => {
       <Container>
         <button onClick={() => navigate(-1)} className={classes.btn}>
           <ArrowIcon color="#232323" />
-          <Typography variant="h4" weight="medium">
-            Назад
+          <Typography variant="h4" weight="medium" className={classes.backBtn}>
+            {t("back")}
           </Typography>
         </button>
       </Container>
@@ -32,10 +34,10 @@ export const TourDetailPage = () => {
             color="primary"
             weight="bold"
           >
-            {tourData.title}
+            {t(tourData.title)}
           </Typography>
         </div>
-        <Typography>{tourData.description}</Typography>
+        <Typography>{t(tourData.description)}</Typography>
 
         <div className={classes.routesList}>
           {tourData.routes.map((item, key) => (
