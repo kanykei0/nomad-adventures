@@ -9,6 +9,7 @@ export const Slider = ({
   children,
   minCardWidth = 270,
   maxCards = 4.2,
+  onCardClick,
 }) => {
   const [slidesPerView, setSlidesPerView] = useState(maxCards);
   const containerRef = useRef(null);
@@ -43,7 +44,11 @@ export const Slider = ({
       >
         {list.map((item, key) => (
           <SwiperSlide className={classes.slide} key={key}>
-            {Card ? <Card items={item} /> : children}
+            {Card ? (
+              <Card onClick={onCardClick} items={item} index={key} />
+            ) : (
+              children
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

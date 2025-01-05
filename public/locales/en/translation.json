@@ -50,6 +50,13 @@
     "text": "Learn more about kyrgyzstan by choosing the right path for travel"
   },
 
+  "404": {
+    "title": "Error 404",
+    "text1": "It seems something went wrong!",
+    "text2": "The page you are requesting does not exist.",
+    "btn": "Go to main page"
+  },
+
   "motoMore": {
     "charac": "Characteristics",
     "type": "Type",

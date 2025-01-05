@@ -1,0 +1,19 @@
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .innerBlock {
+    flex: 1;
+    text-align: center;
+
+    .title {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}
