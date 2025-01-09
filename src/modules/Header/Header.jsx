@@ -33,7 +33,7 @@ export const Header = () => {
           <Container>
             <div className={classes.wrapper}>
               <Link to={PATHS.home} className={classes.logoBlock}>
-                <img alt="nomad aventures logo" src={Logo} />
+                <img loading="lazy" alt="nomad aventures logo" src={Logo} />
               </Link>
               {!isMobile && <DesktopNav />}
               <div className={classes.langBlock}>

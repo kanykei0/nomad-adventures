@@ -17,6 +17,8 @@ import photo17 from "assets/kyrgyzstanImages/photo17.jpg";
 import photo18 from "assets/kyrgyzstanImages/photo18.jpg";
 import photo19 from "assets/kyrgyzstanImages/photo19.jpg";
 import photo20 from "assets/kyrgyzstanImages/photo20.jpg";
+import photo21 from "assets/kyrgyzstanImages/photo21.jpg";
+import photo22 from "assets/kyrgyzstanImages/photo22.jpg";
 
 export const Gallery = [
   photo7,
@@ -38,6 +40,8 @@ export const Gallery = [
   photo15,
   photo6,
   photo8,
+  photo21,
+  photo22,
 ];
 
 export const lastGallery = [

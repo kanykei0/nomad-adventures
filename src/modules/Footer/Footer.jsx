@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className={classes.footer_inner}>
             <div className={classes.footer_inner__logo}>
               <Link to={PATHS.home}>
-                <img alt="nomad aventures logo" src={Logo} />
+                <img loading="lazy" alt="nomad aventures logo" src={Logo} />
               </Link>
             </div>
             <div className={classes.socialLink}>

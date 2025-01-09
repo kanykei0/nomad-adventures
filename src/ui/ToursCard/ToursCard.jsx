@@ -11,7 +11,7 @@ export const ToursCard = ({ items, large }) => {
     <div className={`${classes.card} ${large && classes.cardLarge}`}>
       <Link to={"/tours/" + id}>
         <div className={classes.card_img}>
-          <img src={images[0]} alt={title} />
+          <img loading="lazy" src={images[0]} alt={title} />
         </div>
         <div className={classes.info}>
           <Typography className={classes.title} variant="h4" weight="semiBold">

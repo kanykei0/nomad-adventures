@@ -8,7 +8,7 @@ export const ServiceCard = ({ item }) => {
   return (
     <div className={classes.service}>
       <div className={classes.img}>
-        <img src={item.icon} alt={item.title} />
+        <img src={item.icon} alt={item.title} loading="lazy" />
       </div>
       <div className={classes.info}>
         <Typography weight="medium" color="primary" variant="h4">

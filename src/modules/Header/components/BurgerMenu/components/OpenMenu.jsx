@@ -15,7 +15,7 @@ export const OpenMenu = ({ isClose, setIsClose, menuRef }) => {
         <div className={classes.navTop}>
           <div className={classes.navTop_logo}>
             <Link to={PATHS.home} className={classes.logoBlock}>
-              <img alt="nomad aventures logo" src={Logo} />
+              <img loading="lazy" alt="nomad aventures logo" src={Logo} />
             </Link>
           </div>
           <div

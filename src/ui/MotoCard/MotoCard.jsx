@@ -11,7 +11,7 @@ export const MotoCard = ({ items, large }) => {
     <div className={`${classes.card} ${large && classes.cardLarge}`}>
       <Link to={"/our-motorbikes/" + id}>
         <div className={classes.card_img}>
-          <img src={images[0]} alt={title} />
+          <img loading="lazy" src={images[0]} alt={title} />
         </div>
         <div className={classes.info_motoList}>
           <Typography
@@ -30,7 +30,7 @@ export const MotoCard = ({ items, large }) => {
               </td>
               <td className={classes.info_rent_cost}>
                 <Typography>
-                  ${cost_1} {t("motoMore.day")}
+                  ${cost_1} / {t("motoMore.day")}
                 </Typography>
               </td>
             </tr>
@@ -40,7 +40,7 @@ export const MotoCard = ({ items, large }) => {
               </td>
               <td className={classes.info_rent_cost}>
                 <Typography>
-                  ${cost_2} {t("motoMore.day")}
+                  ${cost_2} / {t("motoMore.day")}
                 </Typography>
               </td>
             </tr>

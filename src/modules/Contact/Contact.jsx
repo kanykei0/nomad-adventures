@@ -7,10 +7,10 @@ export const Contact = () => {
     <div className={classes.block}>
       <div className={classes.images}>
         <Typography className={classes.text} color="white" weight="ultraLight">
-          Nomad adventures
+          Moto rent bishkek
         </Typography>
         <div className={classes.image}>
-          <img src={yurta} alt="Kyrgyzstan" />
+          <img loading="lazy" src={yurta} alt="Kyrgyzstan" />
         </div>
       </div>
       <ContactUs bgWhite />

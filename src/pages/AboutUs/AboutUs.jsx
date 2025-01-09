@@ -45,11 +45,11 @@ export const AboutUs = () => {
             </ol>
           </div>
           <div className={classes.imageBlock}>
-            <img src={photo} alt="about us" />
+            <img loading="lazy" src={photo} alt="about us" />
           </div>
         </div>
         <div className={classes.bottomImage}>
-          <img src={photo1} alt="sbout us" />
+          <img loading="lazy" src={photo1} alt="sbout us" />
         </div>
       </div>
     </Container>

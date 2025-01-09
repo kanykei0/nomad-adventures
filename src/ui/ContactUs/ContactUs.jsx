@@ -57,7 +57,7 @@ export const ContactUs = ({ bgWhite }) => {
               className={classes.link}
             >
               <Typography className={classes.link_text}>
-                @nomad_adventures_888
+                @extreme_888
               </Typography>
             </a>
           </div>

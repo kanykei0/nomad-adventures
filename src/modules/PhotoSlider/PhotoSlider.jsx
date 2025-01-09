@@ -15,7 +15,7 @@ export const PhotoSlider = ({ list, long }) => {
         {list.map((item, key) => (
           <SwiperSlide className={classes.slide} key={key}>
             <div className={classes.image}>
-              <img src={item} alt={key} />
+              <img src={item} alt={key} loading="lazy" />
             </div>
           </SwiperSlide>
         ))}

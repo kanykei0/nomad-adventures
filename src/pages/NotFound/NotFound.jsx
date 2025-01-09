@@ -1,9 +1,11 @@
 import { Button, Typography } from "ui/index";
 import classes from "./NotFound.module.scss";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 export const NotFound = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <div className={classes.block}>
@@ -20,7 +22,12 @@ export const NotFound = () => {
           {t("404.text2")}
         </Typography>
 
-        <Button className={classes.btn} text={t("404.btn")} size="large" />
+        <Button
+          className={classes.btn}
+          text={t("404.btn")}
+          size="large"
+          onClick={() => navigate("/")}
+        />
       </div>
     </div>
   );
