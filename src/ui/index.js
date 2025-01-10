@@ -6,3 +6,4 @@ export { ToursCard } from "./ToursCard/ToursCard";
 export { Heading } from "./Heading/Heading";
 export { ContactUs } from "./ContactUs/ContactUs";
 export { ImageCard } from "./ImageCard/ImageCard";
+export { Logo } from "./Logo/Logo";

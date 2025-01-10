@@ -1,4 +1,9 @@
+@use "styles/mixin" as *;
+
 .icon {
-  margin-left: 20px;
   cursor: pointer;
+
+  @include small {
+    margin-left: 20px;
+  }
 }

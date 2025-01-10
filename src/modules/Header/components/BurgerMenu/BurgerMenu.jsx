@@ -13,17 +13,6 @@ const Burger = () => {
     setIsClose(true);
   }, [nav.pathname]);
 
-  // useEffect(() => {
-  //   if (!isClose) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "";
-  //   }
-  //   return () => {
-  //     document.body.style.overflow = "";
-  //   };
-  // }, [isClose]);
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {

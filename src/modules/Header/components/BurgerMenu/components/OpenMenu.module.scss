@@ -26,8 +26,10 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 12px;
+
       .navTop_logo {
-        width: 80px;
+        padding: 20px;
+        color: var(--color-white);
       }
       .navTop_close {
         cursor: pointer;

@@ -1,10 +1,9 @@
-import { NavigationData, PATHS } from "utils/Constants/Constants";
+import { NavigationData } from "utils/Constants/Constants";
 import classes from "./OpenMenu.module.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Logo from "assets/images/logo.svg";
 import { CloseIcon } from "assets/icons/CloseIcon";
-import { Typography } from "ui/index";
+import { Logo, Typography } from "ui/index";
 
 export const OpenMenu = ({ isClose, setIsClose, menuRef }) => {
   const { t } = useTranslation();
@@ -14,9 +13,7 @@ export const OpenMenu = ({ isClose, setIsClose, menuRef }) => {
       <div className={classes.nav} ref={menuRef}>
         <div className={classes.navTop}>
           <div className={classes.navTop_logo}>
-            <Link to={PATHS.home} className={classes.logoBlock}>
-              <img loading="lazy" alt="nomad aventures logo" src={Logo} />
-            </Link>
+            <Logo />
           </div>
           <div
             className={classes.navTop_close}

@@ -1,0 +1,22 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  .block {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .line {
+      margin: 0 10px;
+      width: 1.5px;
+      height: 25px;
+      background-color: var(--color-primary);
+    }
+  }
+}

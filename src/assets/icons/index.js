@@ -7,3 +7,4 @@ export { TelegramIcon } from "./TelegramIcon";
 export { WhatsappIcon } from "./WhatsappIcon";
 export { PhoneIcon } from "./PhoneIcon";
 export { LocationIcon } from "./LocationIcon";
+export { LogoIcon } from "./LogoIcon";

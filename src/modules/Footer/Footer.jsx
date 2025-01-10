@@ -1,8 +1,6 @@
-import { Container, Typography } from "ui/index";
+import { Container, Logo, Typography } from "ui/index";
 import classes from "./Footer.module.scss";
-import { Link } from "react-router-dom";
-import { PATHS, SocialMediaLinks } from "utils/Constants/Constants";
-import Logo from "assets/images/logoWhite.svg";
+import { SocialMediaLinks } from "utils/Constants/Constants";
 
 export const Footer = () => {
   return (
@@ -11,9 +9,7 @@ export const Footer = () => {
         <div className={classes.block}>
           <div className={classes.footer_inner}>
             <div className={classes.footer_inner__logo}>
-              <Link to={PATHS.home}>
-                <img loading="lazy" alt="nomad aventures logo" src={Logo} />
-              </Link>
+              <Logo footer />
             </div>
             <div className={classes.socialLink}>
               {SocialMediaLinks.map((item, key) => (

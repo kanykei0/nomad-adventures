@@ -69,21 +69,29 @@ export const SocialMediaLinks = [
 ];
 
 export const AboutServicesList = [
-  { icon: motoIcon, title: "aboutBlock.rent", desc: "aboutBlock.rentDesc" },
+  {
+    icon: motoIcon,
+    title: "aboutBlock.rent",
+    desc: "aboutBlock.rentDesc",
+    path: PATHS.ourMotorbikes,
+  },
   {
     icon: toursIcon,
     title: "aboutBlock.tours",
     desc: "aboutBlock.toursDesc",
+    path: PATHS.tours,
   },
   {
     icon: guideIcon,
     title: "aboutBlock.guide",
     desc: "aboutBlock.guideDesc",
+    path: PATHS.aboutUs,
   },
   {
     icon: MotoPart,
     title: "aboutBlock.garant",
     desc: "aboutBlock.garantDesc",
+    path: PATHS.aboutUs,
   },
 ];
 

@@ -13,11 +13,16 @@
 
     .footer_inner {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+
+      @include small {
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
       .footer_inner__logo {
-        width: 80px;
+        margin-right: 20px;
       }
 
       .socialLink {
@@ -41,6 +46,11 @@
     .footer_bottom {
       text-align: center;
       padding-bottom: 15px;
+      margin-top: 25px;
+
+      @include small {
+        margin-top: 0;
+      }
     }
   }
 }
