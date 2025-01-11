@@ -4,6 +4,10 @@
   background-color: var(--color-dark);
   color: var(--color-white);
 
+  @include medium {
+    padding: 10px 0;
+  }
+
   .block {
     @include medium {
       display: flex;
@@ -45,11 +49,15 @@
 
     .footer_bottom {
       text-align: center;
-      padding-bottom: 15px;
+      padding-bottom: 20px;
       margin-top: 25px;
 
       @include small {
         margin-top: 0;
+      }
+
+      @include medium {
+        padding-bottom: 0;
       }
     }
   }

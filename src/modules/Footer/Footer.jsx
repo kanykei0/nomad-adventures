@@ -21,7 +21,7 @@ export const Footer = () => {
           </div>
           <div className={classes.footer_bottom}>
             <Typography>
-              © 2024 NomadAdventures, Inc. All rights reserved.
+              © 2025 NomadAdventures, Inc. All rights reserved.
             </Typography>
           </div>
         </div>

@@ -10,7 +10,7 @@ export const ServiceCard = ({ item }) => {
     <Link to={item.path} className={classes.link}>
       <div className={classes.service}>
         <div className={classes.img}>
-          <img src={item.icon} alt={item.title} loading="lazy" />
+          <img src={item.icon} alt={item.title} />
         </div>
         <div className={classes.info}>
           <Typography weight="medium" color="primary" variant="h4">

@@ -45,7 +45,7 @@ export const PlacesInKG = () => {
               role="button"
               tabIndex={0}
             >
-              <img loading="lazy" src={path} alt={`Image ${index + 1}`} />
+              <img src={path} alt={`Image ${index + 1}`} />
             </div>
           ))}
         </div>

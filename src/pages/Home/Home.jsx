@@ -41,7 +41,7 @@ export const Home = () => {
         <Heading withBtn={PATHS.ourMotorbikes}>
           {t("nav.ourMotorbikes")}
         </Heading>
-        <Slider list={MotoList.slice(0, 6)} Card={MotoCard} />
+        <Slider list={MotoList} Card={MotoCard} />
         <Heading withBtn={PATHS.tours}>{t("nav.tours")}</Heading>
         <Slider list={ToursList.slice(0, 6)} Card={ToursCard} />
         <Heading withBtn={PATHS.placesInKG}>{t("nav.placesInKG")}</Heading>

@@ -13,7 +13,7 @@ export const AboutUsBlock = () => {
   return (
     <div className={classes.block}>
       <div className={classes.image}>
-        <img src={manBike} alt="bike" loading="lazy" />
+        <img src={manBike} alt="bike" />
       </div>
       <div className={classes.info}>
         <Typography
@@ -28,7 +28,7 @@ export const AboutUsBlock = () => {
           {t("aboutBlock.title2")}
         </Typography>
         <div className={classes.imageInvise}>
-          <img src={manBike} alt="bike" loading="lazy" />
+          <img src={manBike} alt="bike" />
         </div>
         <Typography className={classes.desc}>{t("aboutBlock.desc")}</Typography>
         <div className={classes.services}>
@@ -39,10 +39,10 @@ export const AboutUsBlock = () => {
       </div>
       <div className={classes.bottom}>
         <div className={`${classes.bottom_image} ${classes.bottom_imageLeft}`}>
-          <img src={kelsuu} alt="bike" loading="lazy" />
+          <img src={kelsuu} alt="bike" />
         </div>
         <div className={`${classes.bottom_image}`}>
-          <img src={horses} alt="bike" loading="lazy" />
+          <img src={horses} alt="bike" />
         </div>
       </div>
     </div>

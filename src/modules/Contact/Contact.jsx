@@ -10,7 +10,7 @@ export const Contact = () => {
           Moto rent bishkek
         </Typography>
         <div className={classes.image}>
-          <img loading="lazy" src={yurta} alt="Kyrgyzstan" />
+          <img src={yurta} alt="Kyrgyzstan" />
         </div>
       </div>
       <ContactUs bgWhite />
