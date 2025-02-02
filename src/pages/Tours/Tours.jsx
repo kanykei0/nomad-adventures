@@ -2,6 +2,7 @@ import { Container, Heading, ToursCard } from "ui/index";
 import classes from "./Tours.module.scss";
 import { ToursList } from "utils/Constants/ToursDataConstant";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 // FIX AFTER MORE INFO
 
@@ -22,20 +23,28 @@ export const Tours = () => {
   // };
 
   return (
-    <Container>
-      <div className={classes.block}>
-        <div className={classes.heading}>
-          <Heading className={classes.title}>{t("nav.tours")}</Heading>
-          {/* <div className={classes.filter}>
+    <>
+      <Helmet>
+        <title>{t("seo.tours.title")}</title>
+        <meta name="description" content={t("seo.tours.description")} />
+        <meta name="keywords" content={t("seo.tours.keywords")} />
+        <link rel="canonical" href="https://moto-rent-bishkek.com/tours" />
+      </Helmet>
+
+      <Container>
+        <div className={classes.block}>
+          <div className={classes.heading}>
+            <Heading className={classes.title}>{t("nav.tours")}</Heading>
+            {/* <div className={classes.filter}>
             <TourSelect
               options={options}
               defaultValue={options[0]}
               onChange={handleChange}
             />
           </div> */}
-        </div>
-        <div className={classes.list}>
-          {/* {selectedTour.length > 0
+          </div>
+          <div className={classes.list}>
+            {/* {selectedTour.length > 0
             ? selectedTour.map((item, key) => (
                 <ToursCard key={key} items={item} />
               ))
@@ -43,11 +52,12 @@ export const Tours = () => {
                 <ToursCard key={key} items={item} />
               ))} */}
 
-          {ToursList.map((item, key) => (
-            <ToursCard large key={key} items={item} />
-          ))}
+            {ToursList.map((item, key) => (
+              <ToursCard large key={key} items={item} />
+            ))}
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };

@@ -1,5 +1,6 @@
 import { AboutUsBlock, Contact, ImageModal, Main, Slider } from "modules/index";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Container, Heading, ImageCard, MotoCard, ToursCard } from "ui/index";
 import { MotoList, PATHS } from "utils/Constants/Constants";
@@ -34,7 +35,14 @@ export const Home = () => {
   };
 
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>{t("seo.home.title")}</title>
+        <meta name="description" content={t("seo.home.description")} />
+        <meta name="keywords" content={t("seo.home.keywords")} />
+        <link rel="canonical" href="https://moto-rent-bishkek.com/" />
+      </Helmet>
+
       <Main />
       <Container>
         <AboutUsBlock />
@@ -61,6 +69,6 @@ export const Home = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-    </div>
+    </>
   );
 };

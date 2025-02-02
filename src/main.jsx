@@ -7,7 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css";
 import "utils/I18next/I18n";
 import "styles/global.scss";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={Router} />
+  <HelmetProvider>
+    <RouterProvider router={Router} />
+  </HelmetProvider>
 );

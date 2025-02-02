@@ -113,5 +113,33 @@
       "shortDesc": "A journey to Lake Kel-Suu is an adventure to one of the most fascinating and beautiful spots in Kyrgyzstan.",
       "desc": "A journey to Lake Kel-Suu is an adventure to one of the most fascinating and beautiful spots in Kyrgyzstan. Starting from Bishkek, the route takes you through beautiful valleys, rocky roads and high mountain passes. Along the way, you’ll see amazing views, rushing rivers and wild nature leading to this stunning high-altitude lake.\r\n\r\nLocated at 3500 meters in the Kok-Kiya Gorge, the lake is known for its rugged shores and bright turquoise waters surrounded by towering cliffs. Here, you can experience complete peace, take walks by the lake and capture incredible photos.\r\n\r\nRoute Highlights:\r\n• Traveling through mountain passes and thrilling winding roads;\r\n• Staying overnight in yurts or tents in quiet, remote spots by the lake;\r\n• Passing through the natural beauty of Naryn and At-Bashi;\r\n• Spotting wildlife and rare animals along the way.\r\n\r\nThis route is perfect for adventure lovers who enjoy challenges and want to explore one of Kyrgyzstan’s most remote and breathtaking locations."
     }
+  },
+
+  "seo": {
+    "home": {
+      "title": "Moto rent Kyrgyzstan",
+      "description": "Motorcycle rental and tours in Kyrgyzstan",
+      "keywords": "moto rent, moto rent bishkek, moto tours, motorcycles, moto tours Kyrgyzstan, Kyrgyzstan, adventure, nature, motorcycles"
+    },
+    "aboutUs": {
+      "title": "About Us - Moto rent Kyrgyzstan",
+      "description": "Learn more about our company offering motorcycle rental services and organizing moto tours in Kyrgyzstan. We provide unique nature adventures.",
+      "keywords": "about us, motorcycle rental, moto tours, motorcycles, Kyrgyzstan, adventure, nature, tours in Kyrgyzstan, Moto rent"
+    },
+    "gallery": {
+      "title": "Gallery - Moto rent Kyrgyzstan",
+      "description": "Explore our gallery with vibrant moments from moto tours across Kyrgyzstan. Enjoy the views of nature, mountains, and motorcycle adventures.",
+      "keywords": "gallery, places in Kyrgyzstan, moto tours, motorcycle rental, Kyrgyzstan, nature, adventure, mountains, motorcycles, photo tours"
+    },
+    "ourMotorbikes": {
+      "title": "Our Motorbikes - Moto rent Kyrgyzstan",
+      "description": "Rent a motorcycle cheap and fast. Prices from $50 per day.",
+      "keywords": "moto rent, moto rent bishkek, moto tours, motorcycles, moto tours Kyrgyzstan, Kyrgyzstan, adventure, nature, motorcycles"
+    },
+    "tours": {
+      "title": "Tours - Moto rent Kyrgyzstan",
+      "description": "Explore Kyrgyzstan on a motorcycle! Enjoy thrilling tours with an experienced guide and full technical support.",
+      "keywords": "motorcycle tours, Kyrgyzstan tours, adventure travel, enduro tours, motorbike travel, mountains of Kyrgyzstan, moto adventures, guide, support, best prices"
+    }
   }
 }

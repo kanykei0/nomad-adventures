@@ -4,6 +4,7 @@ import classes from "./PlacesInKG.module.scss";
 import { ImageModal } from "modules/index";
 import { useTranslation } from "react-i18next";
 import { Gallery } from "utils/Constants/Gallery";
+import { Helmet } from "react-helmet-async";
 
 export const PlacesInKG = () => {
   const { t } = useTranslation();
@@ -33,30 +34,42 @@ export const PlacesInKG = () => {
   };
 
   return (
-    <Container>
-      <div className={classes.block}>
-        <Heading>{t("nav.placesInKG")}</Heading>
-        <div className={classes.imagesList}>
-          {Gallery.map((path, index) => (
-            <div
-              key={index}
-              className={classes.imageBlock}
-              onClick={() => openModal(index)}
-              role="button"
-              tabIndex={0}
-            >
-              <img src={path} alt={`Image ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
+    <>
+      <Helmet>
+        <title>{t("seo.gallery.title")}</title>
+        <meta name="description" content={t("seo.gallery.description")} />
+        <meta name="keywords" content={t("seo.gallery.keywords")} />
+        <link
+          rel="canonical"
+          href="https://moto-rent-bishkek.com/places-in-Kyrgyzstan"
+        />
+      </Helmet>
 
-      <ImageModal
-        images={Gallery}
-        currentIndex={currentImageIndex}
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
-    </Container>
+      <Container>
+        <div className={classes.block}>
+          <Heading>{t("nav.placesInKG")}</Heading>
+          <div className={classes.imagesList}>
+            {Gallery.map((path, index) => (
+              <div
+                key={index}
+                className={classes.imageBlock}
+                onClick={() => openModal(index)}
+                role="button"
+                tabIndex={0}
+              >
+                <img src={path} alt={`Image ${index + 1}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <ImageModal
+          images={Gallery}
+          currentIndex={currentImageIndex}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      </Container>
+    </>
   );
 };

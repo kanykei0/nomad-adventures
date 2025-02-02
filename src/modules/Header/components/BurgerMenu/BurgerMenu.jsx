@@ -1,8 +1,8 @@
 import { BurgerIcon } from "assets/icons/BurgerIcon";
 import classes from "./BurgerMenu.module.scss";
-import { OpenMenu } from "./components/OpenMenu";
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { OpenMenu } from "./components/OpenMenu";
 
 const Burger = () => {
   const [isClose, setIsClose] = useState(true);
