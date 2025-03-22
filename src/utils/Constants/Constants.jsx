@@ -9,6 +9,9 @@ import MotoPart from "assets/images/motoPartIcon.webp";
 import toursIcon from "assets/images/toursIcon.png";
 import guideIcon from "assets/images/guideIcon.jpg";
 
+import honda650XR1 from "assets/motoImages/hondaXR650L1.jpg";
+import honda650XR2 from "assets/motoImages/hondaXR650L2.jpg";
+
 import motoMore1 from "assets/motoImages/redCRF1.jpg";
 import motoMore2 from "assets/motoImages/redCRF2.jpg";
 
@@ -98,23 +101,23 @@ export const AboutServicesList = [
 export const MotoList = [
   {
     id: "0",
-    title: "Honda CRF 250 L",
-    images: [motoMore1, motoMore2],
+    title: "Honda XR 650 L",
+    images: [honda650XR2, honda650XR1],
     year: "2016",
     type: "Single-cylinder",
     make: "Honda",
     cost_1: "80",
     cost_2: "70",
-    description: "motorbikes.id0.desc",
+    description: "motorbikes.id7.desc",
     characteristics: [
-      { name: "motoMore.height", value: "875mm" },
-      { name: "motoMore.weight", value: "143 kg" },
-      { name: "motoMore.displace", value: "250cc" },
-      { name: "motoMore.cooling", value: "Liquid" },
-      { name: "motoMore.transmission", value: "6-speed" },
+      { name: "motoMore.height", value: "950mm" },
+      { name: "motoMore.weight", value: "157 kg" },
+      { name: "motoMore.displace", value: "644cc" },
+      { name: "motoMore.cooling", value: "Air-cooled" },
+      { name: "motoMore.transmission", value: "5-speed" },
       { name: "motoMore.drive", value: "520 chain" },
       { name: "motoMore.front", value: "3.00 x 21" },
-      { name: "motoMore.rear", value: "120/80 x 18" },
+      { name: "motoMore.rear", value: "130/80 x 18" },
     ],
   },
   {
@@ -140,20 +143,20 @@ export const MotoList = [
   },
   {
     id: "2",
-    title: "Honda XR 250",
-    images: [hondaXR1, hondaXR2],
-    year: "-",
+    title: "Honda CRF 250 L",
+    images: [motoMore1, motoMore2],
+    year: "2016",
     type: "Single-cylinder",
     make: "Honda",
     cost_1: "80",
     cost_2: "70",
-    description: "motorbikes.id2.desc",
+    description: "motorbikes.id0.desc",
     characteristics: [
       { name: "motoMore.height", value: "875mm" },
-      { name: "motoMore.weight", value: "133 kg" },
+      { name: "motoMore.weight", value: "143 kg" },
       { name: "motoMore.displace", value: "250cc" },
-      { name: "motoMore.cooling", value: "Air-cooled" },
-      { name: "motoMore.transmission", value: "5-speed" },
+      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.transmission", value: "6-speed" },
       { name: "motoMore.drive", value: "520 chain" },
       { name: "motoMore.front", value: "3.00 x 21" },
       { name: "motoMore.rear", value: "120/80 x 18" },
@@ -203,23 +206,23 @@ export const MotoList = [
   },
   {
     id: "5",
-    title: "Honda Transalp XL600V",
-    images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
+    title: "Honda XR 250",
+    images: [hondaXR1, hondaXR2],
     year: "-",
-    type: "V-Twin-cylinder",
+    type: "Single-cylinder",
     make: "Honda",
     cost_1: "80",
     cost_2: "70",
-    description: "motorbikes.id5.desc",
+    description: "motorbikes.id2.desc",
     characteristics: [
-      { name: "motoMore.height", value: "850mm" },
-      { name: "motoMore.weight", value: "194 kg" },
-      { name: "motoMore.displace", value: "600cc" },
-      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.height", value: "875mm" },
+      { name: "motoMore.weight", value: "133 kg" },
+      { name: "motoMore.displace", value: "250cc" },
+      { name: "motoMore.cooling", value: "Air-cooled" },
       { name: "motoMore.transmission", value: "5-speed" },
       { name: "motoMore.drive", value: "520 chain" },
-      { name: "motoMore.front", value: "90/90 x 21" },
-      { name: "motoMore.rear", value: "120/90 x 17" },
+      { name: "motoMore.front", value: "3.00 x 21" },
+      { name: "motoMore.rear", value: "120/80 x 18" },
     ],
   },
   {
@@ -241,6 +244,27 @@ export const MotoList = [
       { name: "motoMore.drive", value: "520 chain" },
       { name: "motoMore.front", value: "100/90 x 19" },
       { name: "motoMore.rear", value: "130/80 x 17" },
+    ],
+  },
+  {
+    id: "7",
+    title: "Honda Transalp XL600V",
+    images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
+    year: "-",
+    type: "V-Twin-cylinder",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "70",
+    description: "motorbikes.id5.desc",
+    characteristics: [
+      { name: "motoMore.height", value: "850mm" },
+      { name: "motoMore.weight", value: "194 kg" },
+      { name: "motoMore.displace", value: "600cc" },
+      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.transmission", value: "5-speed" },
+      { name: "motoMore.drive", value: "520 chain" },
+      { name: "motoMore.front", value: "90/90 x 21" },
+      { name: "motoMore.rear", value: "120/90 x 17" },
     ],
   },
 ];
