@@ -53,11 +53,11 @@ export const ContactUs = ({ bgWhite }) => {
           <div className={classes.contact_card_info}>
             <a
               target="_blank"
-              href="https://www.instagram.com/extreme_888?utm_source=qr&igsh=dm91c3l1bmYxMXJn"
+              href="https://www.instagram.com/nomad_adventures_888/profilecard/?igsh=NmhsdDUzNHp5dnpm"
               className={classes.link}
             >
               <Typography className={classes.link_text}>
-                @extreme_888
+                nomad_adventures_888
               </Typography>
             </a>
           </div>
