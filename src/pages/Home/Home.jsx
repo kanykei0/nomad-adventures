@@ -1,5 +1,5 @@
 import { AboutUsBlock, Contact, ImageModal, Main, Slider } from "modules/index";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Container, Heading, ImageCard, MotoCard, ToursCard } from "ui/index";
@@ -12,26 +12,10 @@ export const Home = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isScreenSmall, setIsScreenSmall] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsScreenSmall(window.innerWidth < 500);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
 
   const openModal = (index) => {
-    if (!isScreenSmall) {
       setCurrentImageIndex(index);
       setIsModalOpen(true);
-    }
   };
 
   return (

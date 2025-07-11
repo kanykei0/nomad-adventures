@@ -9,6 +9,9 @@ import MotoPart from "assets/images/motoPartIcon.webp";
 import toursIcon from "assets/images/toursIcon.png";
 import guideIcon from "assets/images/guideIcon.jpg";
 
+import gasgas1 from "assets/motoImages/gasgas1.jpeg"
+import gasgas2 from "assets/motoImages/gasgas2.jpeg"
+
 import honda650XR1 from "assets/motoImages/hondaXR650L1.jpg";
 import honda650XR2 from "assets/motoImages/hondaXR650L2.jpg";
 
@@ -101,6 +104,27 @@ export const AboutServicesList = [
 export const MotoList = [
   {
     id: "0",
+    title: "Gas Gas ES 700 Base",
+    images: [gasgas2, gasgas1],
+    year: "2016",
+    type: "Single-cylinder",
+    make: "Honda",
+    cost_1: "120",
+    cost_2: "120",
+    description: "motorbikes.id8.desc",
+    characteristics: [
+      { name: "motoMore.height", value: "936mm" },
+      { name: "motoMore.weight", value: "146 kg" },
+      { name: "motoMore.displace", value: "692,7cc" },
+      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.transmission", value: "6-speed" },
+      { name: "motoMore.drive", value: "520 chain" },
+      { name: "motoMore.front", value: "-" },
+      { name: "motoMore.rear", value: "-" },
+    ],
+  },
+  {
+    id: "1",
     title: "Honda XR 650 L",
     images: [honda650XR2, honda650XR1],
     year: "2016",
@@ -121,7 +145,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "1",
+    id: "2",
     title: "Honda CRF 250 L",
     images: [motoMoreWhite1, motoMoreWhite3, motoMoreWhite2],
     year: "2016",
@@ -142,7 +166,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     title: "Honda CRF 250 L",
     images: [motoMore1, motoMore2],
     year: "2016",
@@ -163,7 +187,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "Honda XR 250",
     images: [hondaXRred1, hondaXRred2, hondaXRred3],
     year: "-",
@@ -184,7 +208,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Honda XR 250",
     images: [hondaXrRainbow1, hondaXrRainbow2],
     year: "-",
@@ -205,7 +229,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "Honda XR 250",
     images: [hondaXR1, hondaXR2],
     year: "-",
@@ -226,14 +250,14 @@ export const MotoList = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     title: "Minsk Goose 400",
     images: [goose1, goose2, goose3, goose4, goose5],
     year: "-",
     type: "Single-cylinder",
     make: "Honda",
-    cost_1: "80",
-    cost_2: "70",
+    cost_1: "100",
+    cost_2: "100",
     description: "motorbikes.id6.desc",
     characteristics: [
       { name: "motoMore.height", value: "845mm" },
@@ -247,7 +271,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     title: "Honda Transalp XL600V",
     images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
     year: "-",

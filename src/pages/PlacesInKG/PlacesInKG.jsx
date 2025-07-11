@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Container, Heading } from "ui/index";
 import classes from "./PlacesInKG.module.scss";
 import { ImageModal } from "modules/index";
@@ -11,26 +11,10 @@ export const PlacesInKG = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isScreenSmall, setIsScreenSmall] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsScreenSmall(window.innerWidth < 500);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
 
   const openModal = (index) => {
-    if (!isScreenSmall) {
       setCurrentImageIndex(index);
       setIsModalOpen(true);
-    }
   };
 
   return (

@@ -57,9 +57,6 @@ export const AboutUs = () => {
               <img src={photo} alt="about us" />
             </div>
           </div>
-          <div className={classes.bottomImage}>
-            <img src={photo1} alt="sbout us" />
-          </div>
         </div>
       </Container>
     </>
