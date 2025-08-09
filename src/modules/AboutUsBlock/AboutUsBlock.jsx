@@ -1,6 +1,6 @@
 import { Typography } from "ui/index";
 import classes from "./AboutUsBlock.module.scss";
-import manBike from "assets/images/manOnBike.jpg";
+import manBike from "assets/images/manOnBike1.jpg";
 import { AboutServicesList } from "utils/Constants/Constants";
 import { ServiceCard } from "./components/ServiceCard/ServiceCard";
 import horses from "assets/images/horses.jpg";

@@ -1,11 +1,35 @@
 .block {
-  padding: 7px 10px 8px;
-  border: 1px solid black;
-  border-radius: 20px;
-  color: black;
+  position: relative;
+  width: fit-content;
 
   .select {
+    all: unset;
     outline: none;
     border: none;
+    padding-right: 20px;
+    cursor: pointer;
+    padding: 7px 25px 8px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+  }
+  .arrow {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+  }
+
+  &.open .arrow {
+    transform: translateY(-50%) rotate(180deg);
   }
 }

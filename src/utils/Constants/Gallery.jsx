@@ -20,6 +20,15 @@ import photo20 from "assets/kyrgyzstanImages/photo20.jpg";
 import photo21 from "assets/kyrgyzstanImages/photo21.jpg";
 import photo22 from "assets/kyrgyzstanImages/photo22.jpg";
 import photo24 from "assets/kyrgyzstanImages/photo24.jpeg";
+import photo25 from "assets/toursImages/ik5.jpg";
+import photo26 from "assets/toursImages/ik6.jpg";
+import photo27 from "assets/toursImages/sonkol1.jpg";
+import photo28 from "assets/toursImages/sonkol2.jpg";
+import photo29 from "assets/toursImages/sonkol4.jpg";
+import photo30 from "assets/toursImages/sonkol5.jpg";
+import photo31 from "assets/toursImages/sonkol6.jpg";
+import photo32 from "assets/toursImages/sonkol8.jpg";
+import photo33 from "assets/toursImages/kelsuu1.jpg";
 
 export const Gallery = [
   photo7,
@@ -28,9 +37,18 @@ export const Gallery = [
   photo13,
   photo16,
   photo14,
+  photo30,
   photo1,
+  photo33,
+  photo25,
+  photo26,
   photo11,
   photo12,
+  photo27,
+  photo28,
+  photo29,
+  photo31,
+  photo32,
   photo2,
   photo3,
   photo4,
@@ -53,5 +71,5 @@ export const lastGallery = [
   photo13,
   photo16,
   photo14,
-  photo1,
+  photo30,
 ];

@@ -29,6 +29,11 @@ import hondaXRred1 from "assets/motoImages/hondaXRred1.jpg";
 import hondaXRred2 from "assets/motoImages/hondaXRred2.jpeg";
 import hondaXRred3 from "assets/motoImages/hondaXRred3.jpeg";
 
+import transalp6501 from "assets/motoImages/transalp650-0.jpeg"
+import transalp6502 from "assets/motoImages/transalp650-1.jpeg"
+import transalp6503 from "assets/motoImages/transalp650-2.jpeg"
+import transalp6504 from "assets/motoImages/transalp650-3.jpg"
+
 import tranaslp1 from "assets/motoImages/Transalp1.jpg";
 import tranaslp2 from "assets/motoImages/Transalp2.jpg";
 import tranaslp3 from "assets/motoImages/Transalp3.jpg";
@@ -272,6 +277,27 @@ export const MotoList = [
   },
   {
     id: "8",
+    title: "Honda XL650V Transalp",
+    images: [transalp6504, transalp6501, transalp6502, transalp6503],
+    year: "-",
+    type: "V-Twin-cylinder",
+    make: "Honda",
+    cost_1: "100",
+    cost_2: "90",
+    description: "motorbikes.id9.desc",
+    characteristics: [
+      { name: "motoMore.height", value: "850mm" },
+      { name: "motoMore.weight", value: "194 kg" },
+      { name: "motoMore.displace", value: "650cc" },
+      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.transmission", value: "5-speed" },
+      { name: "motoMore.drive", value: "520 chain" },
+      { name: "motoMore.front", value: "90/90 x 21" },
+      { name: "motoMore.rear", value: "120/90 x 17" },
+    ],
+  },
+  {
+    id: "9",
     title: "Honda Transalp XL600V",
     images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
     year: "-",
