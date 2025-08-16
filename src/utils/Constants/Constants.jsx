@@ -135,8 +135,8 @@ export const MotoList = [
     year: "2016",
     type: "Single-cylinder",
     make: "Honda",
-    cost_1: "80",
-    cost_2: "70",
+    cost_1: "90",
+    cost_2: "80",
     description: "motorbikes.id7.desc",
     characteristics: [
       { name: "motoMore.height", value: "950mm" },
@@ -261,8 +261,8 @@ export const MotoList = [
     year: "-",
     type: "Single-cylinder",
     make: "Honda",
-    cost_1: "100",
-    cost_2: "100",
+    cost_1: "90",
+    cost_2: "80",
     description: "motorbikes.id6.desc",
     characteristics: [
       { name: "motoMore.height", value: "845mm" },
@@ -303,8 +303,8 @@ export const MotoList = [
     year: "-",
     type: "V-Twin-cylinder",
     make: "Honda",
-    cost_1: "80",
-    cost_2: "70",
+    cost_1: "90",
+    cost_2: "80",
     description: "motorbikes.id5.desc",
     characteristics: [
       { name: "motoMore.height", value: "850mm" },
