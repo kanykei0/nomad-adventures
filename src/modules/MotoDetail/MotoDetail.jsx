@@ -27,29 +27,10 @@ export const MotoDetail = () => {
           <Typography color="primary" variant="h2" weight="bold">
             {motoData.title}
           </Typography>
+          <Typography weight="medium" className={classes.description_price}>${motoData.cost_1} / {t("motoMore.day")}</Typography>
           <Typography weight="regular" className={classes.description_text}>
             {t(motoData.description)}
           </Typography>
-          <table className={classes.info_rent}>
-            <tbody>
-              <tr>
-                <td className={classes.info_rent_days}>
-                  {t("motoMore.dayLess")}
-                </td>
-                <td className={classes.info_rent_cost}>
-                  ${motoData.cost_1} {t("motoMore.day")}
-                </td>
-              </tr>
-              <tr>
-                <td className={classes.info_rent_days}>
-                  {t("motoMore.dayMore")}
-                </td>
-                <td className={classes.info_rent_cost}>
-                  ${motoData.cost_2} {t("motoMore.day")}
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <Characteristics data={motoData.characteristics} type={motoData.type} />

@@ -41,6 +41,14 @@
       margin-top: 10px;
     }
 
+    &_price {
+      margin: 7px 0;
+
+      @include large {
+        margin: 15px 0;
+      }
+    }
+
     &_text {
       margin: 15px 0;
 
