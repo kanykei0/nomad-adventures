@@ -25,22 +25,9 @@ export const MotoCard = ({ items, large }) => {
         <table className={classes.info_rent}>
           <tbody>
             <tr>
-              <td className={classes.info_rent_days}>
-                <Typography>{t("motoMore.dayLess")}</Typography>
-              </td>
               <td className={classes.info_rent_cost}>
                 <Typography>
                   ${cost_1} / {t("motoMore.day")}
-                </Typography>
-              </td>
-            </tr>
-            <tr>
-              <td className={classes.info_rent_days}>
-                <Typography>{t("motoMore.dayMore")}</Typography>
-              </td>
-              <td className={classes.info_rent_cost}>
-                <Typography>
-                  ${cost_2} / {t("motoMore.day")}
                 </Typography>
               </td>
             </tr>
