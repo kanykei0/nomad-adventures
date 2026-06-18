@@ -4,6 +4,12 @@ import {
   TelegramIcon,
   WhatsappIcon,
 } from "assets/icons";
+
+import crf300l0 from "assets/motoImages/crf300l-0.jpg";
+import crf300l1 from "assets/motoImages/crf300l-1.jpg";
+import crf300l2 from "assets/motoImages/crf300l-2.jpg";
+import crf300l3 from "assets/motoImages/crf300l-3.jpg";
+
 import motoIcon from "assets/images/motoIcon.png";
 import MotoPart from "assets/images/motoPartIcon.webp";
 import toursIcon from "assets/images/toursIcon.png";
@@ -109,6 +115,27 @@ export const AboutServicesList = [
 export const MotoList = [
   {
     id: "0",
+    title: "Honda CRF 300 L",
+    images: [crf300l0, crf300l1, crf300l2, crf300l3],
+    year: "2016",
+    type: "Single-cylinder, 4-stroke",
+    make: "Honda",
+    cost_1: "80",
+    cost_2: "80",
+    description: "motorbikes.id10.desc",
+    characteristics: [
+      { name: "motoMore.height", value: "880mm" },
+      { name: "motoMore.weight", value: "142 kg" },
+      { name: "motoMore.displace", value: "286cc" },
+      { name: "motoMore.cooling", value: "Liquid" },
+      { name: "motoMore.transmission", value: "6-speed" },
+      { name: "motoMore.drive", value: "520 chain" },
+      { name: "motoMore.front", value: "80/100-21" },
+      { name: "motoMore.rear", value: "120/80-18" },
+    ],
+  },
+  {
+    id: "1",
     title: "Gas Gas ES 700 Base",
     images: [gasgas2, gasgas1],
     year: "2016",
@@ -129,7 +156,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "1",
+    id: "2",
     title: "Honda XR 650 L",
     images: [honda650XR2, honda650XR1],
     year: "2016",
@@ -150,7 +177,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     title: "Honda CRF 250 L",
     images: [motoMoreWhite1, motoMoreWhite3, motoMoreWhite2],
     year: "2016",
@@ -171,7 +198,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "Honda CRF 250 L",
     images: [motoMore1, motoMore2],
     year: "2016",
@@ -192,7 +219,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Honda XR 250",
     images: [hondaXRred1, hondaXRred2, hondaXRred3],
     year: "-",
@@ -213,7 +240,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "Honda XR 250",
     images: [hondaXrRainbow1, hondaXrRainbow2],
     year: "-",
@@ -234,7 +261,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     title: "Honda XR 250",
     images: [hondaXR1, hondaXR2],
     year: "-",
@@ -255,7 +282,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     title: "Minsk Goose 400",
     images: [goose1, goose2, goose3, goose4, goose5],
     year: "-",
@@ -276,7 +303,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     title: "Honda XL650V Transalp",
     images: [transalp6504, transalp6501, transalp6502, transalp6503],
     year: "-",
@@ -297,7 +324,7 @@ export const MotoList = [
     ],
   },
   {
-    id: "9",
+    id: "10",
     title: "Honda Transalp XL600V",
     images: [tranaslp1, tranaslp2, tranaslp3, tranaslp4],
     year: "-",
